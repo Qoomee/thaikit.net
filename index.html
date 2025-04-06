@@ -132,12 +132,17 @@
 
             <!-- Work & Jobs -->
             <li class="nav-item">
-                <a href="#work" class="nav-link">
+                <a href="#work-jobs" class="nav-link">
                     <div class="link-content">
                         <i class="fas fa-briefcase"></i>
                         <span>Work & Jobs</span>
+                        <i class="fas fa-chevron-right arrow"></i>
                     </div>
                 </a>
+                <ul class="submenu">
+                    <li><a href="#work-jobs" class="submenu-link"><i class="fas fa-briefcase"></i>Recruitment Platforms</a></li>
+                    <li><a href="#work-jobs" class="submenu-link"><i class="fas fa-laptop"></i>Freelance Platforms</a></li>
+                </ul>
             </li>
 
             <!-- Business -->
@@ -146,8 +151,16 @@
                     <div class="link-content">
                         <i class="fas fa-chart-line"></i>
                         <span>Business</span>
+                        <i class="fas fa-chevron-down arrow"></i>
                     </div>
                 </a>
+                <ul class="submenu">
+                    <li><a href="#company-registration" class="submenu-link"><i class="fas fa-file-alt"></i>Company Registration</a></li>
+                    <li><a href="#tax-accounting" class="submenu-link"><i class="fas fa-coins"></i>Tax & Accounting</a></li>
+                    <li><a href="#networking" class="submenu-link"><i class="fas fa-handshake"></i>Networking</a></li>
+                    <li><a href="#payment-tools" class="submenu-link"><i class="fas fa-credit-card"></i>Payment Tools</a></li>
+                    <li><a href="#ecommerce" class="submenu-link"><i class="fas fa-shopping-bag"></i>E-commerce</a></li>
+                </ul>
             </li>
 
             <!-- Learning -->
@@ -156,8 +169,14 @@
                     <div class="link-content">
                         <i class="fas fa-graduation-cap"></i>
                         <span>Learning</span>
+                        <i class="fas fa-chevron-down arrow"></i>
                     </div>
                 </a>
+                <ul class="submenu">
+                    <li><a href="#thai-language" class="submenu-link"><i class="fas fa-language"></i>Thai Language</a></li>
+                    <li><a href="#universities" class="submenu-link"><i class="fas fa-university"></i>Universities & Schools</a></li>
+                    <li><a href="#skill-development" class="submenu-link"><i class="fas fa-brain"></i>Skill Development</a></li>
+                </ul>
             </li>
 
             <!-- About -->
@@ -407,6 +426,254 @@
                             <li><a href="https://www.tripadvisor.com/" target="_blank">TripAdvisor</a></li>
                         </div>
                         <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work & Jobs Section -->
+        <div id="work-jobs">
+            <h1 class="page-title">Work & Jobs</h1>
+            
+            <div class="category-grid">
+                <!-- Recruitment Platforms Card -->
+                <div class="category-card">
+                    <h2><i class="fas fa-briefcase"></i>Recruitment Platforms</h2>
+                    <ul class="link-list">
+                        <li><a href="https://th.jobsdb.com" target="_blank">JobsDB</a></li>
+                        <li><a href="https://www.jobthai.com" target="_blank">JobThai</a></li>
+                        <li><a href="https://www.jobtopgun.com" target="_blank">JobTopGun</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.jobstreet.co.th" target="_blank">JobStreet</a></li>
+                            <li><a href="https://www.adecco.co.th" target="_blank">Adecco</a></li>
+                            <li><a href="https://www.manpower.co.th" target="_blank">Manpower</a></li>
+                            <li><a href="https://www.robertwalters.co.th" target="_blank">Robert Walters</a></li>
+                            <li><a href="https://www.michaelpage.co.th" target="_blank">Michael Page</a></li>
+                            <li><a href="https://www.hays.co.th" target="_blank">Hays</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                    </ul>
+                </div>
+
+                <!-- Freelance Platforms Card -->
+                <div class="category-card">
+                    <h2><i class="fas fa-laptop"></i>Freelance Platforms</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.freelancer.com" target="_blank">Freelancer</a></li>
+                        <li><a href="https://www.upwork.com" target="_blank">Upwork</a></li>
+                        <li><a href="https://www.fiverr.com" target="_blank">Fiverr</a></li>
+                        <li><a href="https://www.guru.com" target="_blank">Guru</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.peopleperhour.com" target="_blank">PeoplePerHour</a></li>
+                            <li><a href="https://www.toptal.com" target="_blank">Toptal</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                    </ul>
+                </div>
+
+                <!-- Experience Sharing Forum Card -->
+                <div id="experience-sharing" class="category-card">
+                    <h2><i class="fas fa-comments"></i>Experience Sharing Forum</h2>
+                    <ul class="link-list">
+                        <li><a href="#" target="_blank">Coming Soon</a></li>
+                        <li><a href="#" target="_blank">Share Your Experience</a></li>
+                        <li><a href="#" target="_blank">Success Stories</a></li>
+                        <li><a href="#" target="_blank">Career Tips</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="#" target="_blank">Industry Insights</a></li>
+                            <li><a href="#" target="_blank">Interview Tips</a></li>
+                            <li><a href="#" target="_blank">Workplace Culture</a></li>
+                            <li><a href="#" target="_blank">Salary Discussions</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Topics</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Section -->
+        <div id="business">
+            <h1 class="page-title">Business</h1>
+            
+            <div class="category-grid">
+                <!-- Company Registration Guide -->
+                <div id="company-registration" class="category-card">
+                    <h2><i class="fas fa-file-alt"></i>Company Registration Guide</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.boi.go.th/" target="_blank">BOI Policy Guide</a></li>
+                        <li><a href="https://www.dbd.go.th/" target="_blank">Department of Business Development</a></li>
+                        <li><a href="https://www.bakermckenzie.com/en/locations/asia-pacific/thailand" target="_blank">Baker McKenzie Thailand</a></li>
+                        <li><a href="https://www.tilleke.com/" target="_blank">Tilleke & Gibbins</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.allenovery.com/en-gb/global/offices/bangkok" target="_blank">Allen & Overy Thailand</a></li>
+                            <li><a href="https://www.herbertsmithfreehills.com/where-we-work/bangkok" target="_blank">Herbert Smith Freehills Thailand</a></li>
+                            <li><a href="https://www.nortonrosefulbright.com/en/locations/bangkok" target="_blank">Nexia Thailand</a></li>
+                            <li><a href="https://www.dentons.com/en/global-presence/thailand" target="_blank">Dentons Thailand</a></li>
+                            <li><a href="https://www.kwm.com/locations/bangkok/" target="_blank">King & Wood Mallesons Thailand</a></li>
+                            <li><a href="https://www.amt-law.com/en/offices/bangkok" target="_blank">Anderson Mori & Tomotsune Thailand</a></li>
+                            <li><a href="https://www.nishimura.com/en/locations/bangkok" target="_blank">Nishimura & Asahi Thailand</a></li>
+                            <li><a href="https://www.epam.com/" target="_blank">EPAM Systems Thailand</a></li>
+                            <li><a href="https://www.lw.com/en/offices/bangkok" target="_blank">Laxofit Thailand</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Services</button>
+                    </ul>
+                </div>
+
+                <!-- Tax & Accounting Services -->
+                <div id="tax-accounting" class="category-card">
+                    <h2><i class="fas fa-coins"></i>Tax & Accounting Services</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.audit.go.th/" target="_blank">Office of the Auditor General of Thailand</a></li>
+                        <li><a href="https://www.rd.go.th/english/" target="_blank">Revenue Department of Thailand</a></li>
+                        <li><a href="https://www.pwc.com/th/en.html" target="_blank">PwC Thailand</a></li>
+                        <li><a href="https://www2.deloitte.com/th/en.html" target="_blank">Deloitte Thailand</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.ey.com/en_th" target="_blank">EY Thailand</a></li>
+                            <li><a href="https://home.kpmg/th/en/home.html" target="_blank">KPMG Thailand</a></li>
+                            <li><a href="https://www.grantthornton.co.th/" target="_blank">Grant Thornton Thailand</a></li>
+                            <li><a href="https://www.bdo.co.th/" target="_blank">BDO Thailand</a></li>
+                            <li><a href="https://www.mazars.co.th/" target="_blank">Mazars Thailand</a></li>
+                            <li><a href="https://www.nexia.com/thailand/" target="_blank">Nexia Thailand</a></li>
+                            <li><a href="https://www.bakermckenzie.com/en/locations/asia-pacific/thailand" target="_blank">Baker McKenzie Thailand</a></li>
+                            <li><a href="https://www.tilleke.com/" target="_blank">Tilleke & Gibbins</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Services</button>
+                    </ul>
+                </div>
+
+                <!-- Networking Platforms -->
+                <div id="networking" class="category-card">
+                    <h2><i class="fas fa-handshake"></i>Networking Platforms</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.thaichamber.org/" target="_blank">Thai Chamber of Commerce</a></li>
+                        <li><a href="https://www.amchamthailand.com/" target="_blank">American Chamber of Commerce Thailand</a></li>
+                        <li><a href="https://www.eabc-thailand.org/" target="_blank">European Association for Business and Commerce</a></li>
+                        <li><a href="https://www.jcc.or.th/" target="_blank">Japanese Chamber of Commerce Thailand</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://austchamthailand.com/" target="_blank">Australian-Thai Chamber of Commerce</a></li>
+                            <li><a href="https://www.bcct.or.th/" target="_blank">British Chamber of Commerce Thailand</a></li>
+                            <li><a href="https://www.chinaenterprises.or.th/" target="_blank">Chinese Enterprise Association Thailand</a></li>
+                            <li><a href="https://www.korchamthai.com/" target="_blank">Korean-Thai Chamber of Commerce</a></li>
+                            <li><a href="https://www.techsauce.co/" target="_blank">Techsauce</a></li>
+                            <li><a href="https://www.startupthailand.org/" target="_blank">Startup Thailand</a></li>
+                            <li><a href="https://www.nia.or.th/" target="_blank">National Innovation Agency</a></li>
+                            <li><a href="https://www.depa.or.th/en" target="_blank">Digital Economy Promotion Agency</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Organizations</button>
+                    </ul>
+                </div>
+
+                <!-- Payment & Receipt Tools -->
+                <div id="payment-tools" class="category-card">
+                    <h2><i class="fas fa-credit-card"></i>Payment & Receipt Tools</h2>
+                    <ul class="link-list">
+                        <li><strong>Mobile Payment</strong></li>
+                        <li><a href="https://www.promptpay.co.th/" target="_blank">PromptPay</a></li>
+                        <li><a href="https://www.truemoney.com/" target="_blank">TrueMoney Wallet</a></li>
+                        <li><a href="https://www.rabbit.co.th/" target="_blank">Rabbit LINE Pay</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><strong>E-Wallets</strong></li>
+                            <li><a href="https://www.scb.co.th/en/personal-banking/digital-banking/scb-easy.html" target="_blank">SCB Easy</a></li>
+                            <li><a href="https://www.kasikornbank.com/en/personal/digital-banking/pages/k-plus.aspx" target="_blank">K PLUS</a></li>
+                            <li><a href="https://www.bangkokbank.com/en/Personal/Digital-Banking/Mobile-Banking" target="_blank">Bangkok Bank Mobile</a></li>
+                            <li><strong>Payment Gateways</strong></li>
+                            <li><a href="https://www.omise.co/th" target="_blank">Omise</a></li>
+                            <li><a href="https://www.2c2p.com/" target="_blank">2C2P</a></li>
+                            <li><a href="https://www.gbprimepay.com/" target="_blank">GB Prime Pay</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More</button>
+                    </ul>
+                </div>
+
+                <!-- E-commerce/Social Media Resources -->
+                <div id="ecommerce" class="category-card">
+                    <h2><i class="fas fa-shopping-bag"></i>E-commerce/Social Media Resources</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.lazada.co.th/" target="_blank">Lazada Thailand</a></li>
+                        <li><a href="https://shopee.co.th/" target="_blank">Shopee Thailand</a></li>
+                        <li><a href="https://www.tiktok.com/shop/" target="_blank">TikTok Shop Thailand</a></li>
+                        <li><a href="https://www.jd.co.th/" target="_blank">JD Central</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.amazon.co.th/" target="_blank">Amazon Thailand</a></li>
+                            <li><a href="https://www.facebook.com/business/" target="_blank">Facebook Business</a></li>
+                            <li><a href="https://business.instagram.com/" target="_blank">Instagram Business</a></li>
+                            <li><a href="https://linebiz.com/th/" target="_blank">LINE Business</a></li>
+                            <li><a href="https://www.flashexpress.co.th/" target="_blank">Flash Express</a></li>
+                            <li><a href="https://th.kerryexpress.com/" target="_blank">Kerry Express</a></li>
+                            <li><a href="https://www.thailandpost.co.th/" target="_blank">Thailand Post</a></li>
+                            <li><a href="https://www.scgexpress.co.th/" target="_blank">SCG Express</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Section -->
+        <div id="learning">
+            <h1 class="page-title">Learning</h1>
+            
+            <div class="category-grid">
+                <!-- Thai Language Learning -->
+                <div id="thai-language" class="category-card">
+                    <h2><i class="fas fa-language"></i>Thai Language Learning</h2>
+                    <ul class="link-list">
+                        <li><strong>University Programs</strong></li>
+                        <li><a href="https://www.arts.chula.ac.th/thai/" target="_blank">Chulalongkorn University Thai Program</a></li>
+                        <li><a href="https://lc.tu.ac.th/" target="_blank">Thammasat University Language Institute</a></li>
+                        <li><a href="https://www.langserv.ku.ac.th/" target="_blank">Kasetsart University Language Center</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><strong>Private Language Schools</strong></li>
+                            <li><a href="https://www.duke-language.com/" target="_blank">Duke Language School</a></li>
+                            <li><a href="https://www.prolanguage.co.th/" target="_blank">Pro Language</a></li>
+                            <li><a href="https://www.union-thai.com/" target="_blank">Union Thai Language</a></li>
+                            <li><strong>Online Learning</strong></li>
+                            <li><a href="https://www.learnthaiwithmod.com/" target="_blank">Learn Thai with Mod</a></li>
+                            <li><a href="https://www.thaipod101.com/" target="_blank">ThaiPod101</a></li>
+                            <li><a href="https://www.duolingo.com/" target="_blank">Duolingo Thai</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Resources</button>
+                    </ul>
+                </div>
+
+                <!-- Universities & International Schools -->
+                <div id="universities" class="category-card">
+                    <h2><i class="fas fa-university"></i>Universities & Schools</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.chula.ac.th/en/" target="_blank">Chulalongkorn University</a></li>
+                        <li><a href="https://www.mahidol.ac.th/en/" target="_blank">Mahidol University</a></li>
+                        <li><a href="https://www.tu.ac.th/en/" target="_blank">Thammasat University</a></li>
+                        <li><a href="https://www.ais.ac.th/" target="_blank">AIS International School</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.kmutt.ac.th/en/" target="_blank">King Mongkut's University of Technology</a></li>
+                            <li><a href="https://www.au.edu/" target="_blank">Assumption University</a></li>
+                            <li><a href="https://www.stamford.edu/" target="_blank">Stamford International University</a></li>
+                            <li><a href="https://www.webster.ac.th/" target="_blank">Webster University Thailand</a></li>
+                            <li><a href="https://www.patana.ac.th/" target="_blank">Bangkok Patana School</a></li>
+                            <li><a href="https://www.shrewsbury.ac.th/" target="_blank">Shrewsbury International School</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Institutions</button>
+                    </ul>
+                </div>
+
+                <!-- Skill Development -->
+                <div id="skill-development" class="category-card">
+                    <h2><i class="fas fa-brain"></i>Skill Development</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.dsd.go.th/en/" target="_blank">Department of Skill Development</a></li>
+                        <li><a href="https://www.nstda.or.th/en/" target="_blank">National Science and Technology Development Agency</a></li>
+                        <li><a href="https://www.depa.or.th/en" target="_blank">Digital Economy Promotion Agency</a></li>
+                        <li><a href="https://www.britishcouncil.or.th/" target="_blank">British Council Thailand</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.goethe.de/ins/th/" target="_blank">Goethe-Institut Thailand</a></li>
+                            <li><a href="https://bangkok.thaifrench.org/en" target="_blank">Alliance Française Bangkok</a></li>
+                            <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+                            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                            <li><a href="https://www.skillane.com/" target="_blank">Skillane</a></li>
+                            <li><a href="https://www.wongnai.com/courses" target="_blank">Wongnai Academy</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Resources</button>
                     </ul>
                 </div>
             </div>

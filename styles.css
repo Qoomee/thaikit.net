@@ -21,6 +21,14 @@
     --macaron-pink-dark: #fbcfe8;
     --macaron-yellow: #fef3c7;
     --macaron-yellow-dark: #fde68a;
+    --macaron-blue: #e6f0f3;
+    --macaron-blue-dark: #d1e4ea;
+    --macaron-purple: #f3e8ff;
+    --macaron-purple-dark: #e9d5ff;
+    --macaron-green: #dcfce7;
+    --macaron-green-dark: #bbf7d0;
+    --macaron-tiffany: #ccfbf1;
+    --macaron-tiffany-dark: #99f6e4;
 }
 
 body {
@@ -438,4 +446,218 @@ body {
 
 #lifestyle .category-card h2 i.fa-plane {
     color: #0891b2;
+}
+
+/* Work & Jobs 模块背景 */
+#work-jobs {
+    background-color: var(--macaron-blue);
+    border-radius: 24px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 48px;
+}
+
+#work-jobs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--macaron-blue), var(--macaron-blue-dark));
+    opacity: 0.7;
+    z-index: 0;
+}
+
+#work-jobs .page-title,
+#work-jobs .category-grid {
+    position: relative;
+    z-index: 1;
+}
+
+#work-jobs .category-card {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Work & Jobs 卡片图标颜色 */
+#work-jobs .category-card h2 i.fa-briefcase {
+    color: #3498db;
+}
+
+#work-jobs .category-card h2 i.fa-laptop {
+    color: #2ecc71;
+}
+
+#work-jobs .category-card h2 i.fa-comments {
+    color: #9333ea;
+}
+
+/* 针对三个卡片的特殊网格布局 */
+#work-jobs .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    #work-jobs .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #work-jobs .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Business 模块背景 */
+#business {
+    background-color: var(--macaron-purple);
+    border-radius: 24px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 48px;
+}
+
+#business::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--macaron-purple), var(--macaron-purple-dark));
+    opacity: 0.7;
+    z-index: 0;
+}
+
+#business .page-title,
+#business .category-grid {
+    position: relative;
+    z-index: 1;
+}
+
+#business .category-card {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Business 卡片图标颜色 */
+#business .category-card h2 i.fa-file-alt {
+    color: #4f46e5;
+}
+
+#business .category-card h2 i.fa-coins {
+    color: #f59e0b;
+}
+
+#business .category-card h2 i.fa-handshake {
+    color: #10b981;
+}
+
+#business .category-card h2 i.fa-credit-card {
+    color: #3b82f6;
+}
+
+#business .category-card h2 i.fa-shopping-bag {
+    color: #ec4899;
+}
+
+/* Payment Tools 卡片中的分类标题 */
+#business #payment-tools .link-list li strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#business #payment-tools .link-list li:first-child strong {
+    margin-top: 0;
+}
+
+/* Learning 模块背景 */
+#learning {
+    background-color: var(--macaron-tiffany);
+    border-radius: 24px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 48px;
+}
+
+#learning::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--macaron-tiffany), var(--macaron-tiffany-dark));
+    opacity: 0.7;
+    z-index: 0;
+}
+
+#learning .page-title,
+#learning .category-grid {
+    position: relative;
+    z-index: 1;
+}
+
+#learning .category-card {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Learning 卡片图标颜色 */
+#learning .category-card h2 i.fa-language {
+    color: #0ea5e9;
+}
+
+#learning .category-card h2 i.fa-university {
+    color: #8b5cf6;
+}
+
+#learning .category-card h2 i.fa-brain {
+    color: #f43f5e;
+}
+
+/* Thai Language Learning 卡片中的分类标题 */
+#learning #thai-language .link-list li strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#learning #thai-language .link-list li:first-child strong {
+    margin-top: 0;
+}
+
+/* Learning 模块特殊网格布局 */
+#learning .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    #learning .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #learning .category-grid {
+        grid-template-columns: 1fr;
+    }
 } 
