@@ -476,9 +476,32 @@ body {
     z-index: 1;
 }
 
+/* Work & Jobs 模块卡片样式 */
 #work-jobs .category-card {
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+#work-jobs .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1400px) {
+    #work-jobs .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #work-jobs .category-grid {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
 }
 
 /* Work & Jobs 卡片图标颜色 */
@@ -492,25 +515,6 @@ body {
 
 #work-jobs .category-card h2 i.fa-comments {
     color: #9333ea;
-}
-
-/* 针对三个卡片的特殊网格布局 */
-#work-jobs .category-grid {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-    #work-jobs .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    #work-jobs .category-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Business 模块背景 */
@@ -615,6 +619,28 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+#learning .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1400px) {
+    #learning .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #learning .category-grid {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+}
+
 /* Learning 卡片图标颜色 */
 #learning .category-card h2 i.fa-language {
     color: #0ea5e9;
@@ -641,25 +667,6 @@ body {
 
 #learning #thai-language .link-list li:first-child strong {
     margin-top: 0;
-}
-
-/* Learning 模块特殊网格布局 */
-#learning .category-grid {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-    #learning .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    #learning .category-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* 移除签证信息卡片的特殊样式 */
