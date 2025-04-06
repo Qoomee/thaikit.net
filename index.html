@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Thaikit.net - Navigation Website</title>
+    <title>ThaiKit - Your Guide to Thailand</title>
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://thaikit.net/en/" />
@@ -16,28 +16,465 @@
     <link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
     <link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
     
+    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- 样式表 -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="logo">Thaikit.net</div>
-            <div class="nav-links">
-                <a href="/en/">English</a>
-                <a href="/zh-cn/">简体中文</a>
-                <a href="/zh-tw/">繁體中文</a>
-                <a href="/ja/">日本語</a>
-                <a href="/th/">ไทย</a>
+    <!-- 左侧导航栏 -->
+    <nav class="sidebar">
+        <a href="/" class="logo">ThaiKit</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#essentials" class="nav-link">
+                    <div class="link-content">
+                        <i class="fas fa-compass"></i>
+                        <span>Essentials</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </div>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item">
+                        <a href="#visa-information" class="submenu-link">
+                            <i class="fas fa-passport"></i>
+                            Visa Information
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#phone-card" class="submenu-link">
+                            <i class="fas fa-mobile-alt"></i>
+                            Phone Card/Broadband
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#house-rental" class="submenu-link">
+                            <i class="fas fa-home"></i>
+                            House Rental Platform
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#local-banks" class="submenu-link">
+                            <i class="fas fa-university"></i>
+                            Local Banks
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#hospitals" class="submenu-link">
+                            <i class="fas fa-hospital"></i>
+                            Hospitals
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#insurance" class="submenu-link">
+                            <i class="fas fa-shield-alt"></i>
+                            Insurance Resources
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Lifestyle -->
+            <li class="nav-item">
+                <a href="#lifestyle" class="nav-link">
+                    <div class="link-content">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <span>Lifestyle</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </div>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item">
+                        <a href="#daily-life" class="submenu-link">
+                            <i class="fas fa-home"></i>
+                            Daily Life
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#food-delivery" class="submenu-link">
+                            <i class="fas fa-utensils"></i>
+                            Food Delivery
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#transportation" class="submenu-link">
+                            <i class="fas fa-bus"></i>
+                            Transportation
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#shows-exhibitions" class="submenu-link">
+                            <i class="fas fa-theater-masks"></i>
+                            Shows & Exhibitions
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#movies-cinemas" class="submenu-link">
+                            <i class="fas fa-film"></i>
+                            Movies & Cinemas
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#media-news" class="submenu-link">
+                            <i class="fas fa-newspaper"></i>
+                            Media & News
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#travel-tourism" class="submenu-link">
+                            <i class="fas fa-plane"></i>
+                            Travel & Tourism
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Work & Jobs -->
+            <li class="nav-item">
+                <a href="#work" class="nav-link">
+                    <div class="link-content">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Work & Jobs</span>
+                    </div>
+                </a>
+            </li>
+
+            <!-- Business -->
+            <li class="nav-item">
+                <a href="#business" class="nav-link">
+                    <div class="link-content">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Business</span>
+                    </div>
+                </a>
+            </li>
+
+            <!-- Learning -->
+            <li class="nav-item">
+                <a href="#learning" class="nav-link">
+                    <div class="link-content">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Learning</span>
+                    </div>
+                </a>
+            </li>
+
+            <!-- About -->
+            <li class="nav-item">
+                <a href="#about" class="nav-link">
+                    <div class="link-content">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <div id="essentials">
+            <h1 class="page-title">Essentials</h1>
+            
+            <div class="category-grid">
+                <!-- 签证信息 -->
+                <div id="visa-information" class="category-card">
+                    <h2><i class="fas fa-passport"></i>Visa Information</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.immigration.go.th/" target="_blank">Thai Immigration Bureau</a></li>
+                        <li><a href="https://www.thaiembassy.org/" target="_blank">Thai Embassy Information</a></li>
+                        <li><a href="https://www.thailandelite.com/" target="_blank">Thailand Elite Visa</a></li>
+                        <li><a href="https://www.boi.go.th/smart-visa/" target="_blank">BOI Smart Visa</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://thailand.embassy.gov.au/" target="_blank">Australian Embassy Bangkok</a></li>
+                            <li><a href="https://www.gov.uk/world/organisations/british-embassy-bangkok" target="_blank">British Embassy Bangkok</a></li>
+                            <li><a href="https://th.usembassy.gov/" target="_blank">U.S. Embassy Bangkok</a></li>
+                            <li><a href="http://th.china-embassy.gov.cn/" target="_blank">Chinese Embassy Bangkok</a></li>
+                            <li><a href="https://www.th.emb-japan.go.jp/" target="_blank">Japanese Embassy Bangkok</a></li>
+                            <li><a href="https://overseas.mofa.go.kr/th-en/index.do" target="_blank">Korean Embassy Bangkok</a></li>
+                            <li><a href="https://bangkok.diplo.de/" target="_blank">German Embassy Bangkok</a></li>
+                            <li><a href="https://th.ambafrance.org/" target="_blank">French Embassy Bangkok</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Embassies</button>
+                    </ul>
+                </div>
+
+                <!-- 电话卡/宽带推荐 -->
+                <div id="phone-card" class="category-card">
+                    <h2><i class="fas fa-mobile-alt"></i>Phone Card/Broadband</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.ais.th/en/" target="_blank">AIS SIM Card Packages</a></li>
+                        <li><a href="https://www.truemove-h.com/en/" target="_blank">True SIM Card Packages</a></li>
+                        <li><a href="https://www.dtac.co.th/en/" target="_blank">DTAC SIM Card Packages</a></li>
+                        <li><a href="https://www.ais.th/fibre/" target="_blank">AIS Fibre</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.3bb.co.th/en" target="_blank">3BB Broadband</a></li>
+                            <li><a href="https://trueonline.truecorp.co.th/en" target="_blank">True Online</a></li>
+                            <li><a href="https://www.tot.co.th/en" target="_blank">TOT Broadband</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Services</button>
+                    </ul>
+                </div>
+
+                <!-- 租房平台 -->
+                <div id="house-rental" class="category-card">
+                    <h2><i class="fas fa-home"></i>House Rental Platform</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.ddproperty.com" target="_blank">DDproperty</a></li>
+                        <li><a href="https://www.hipflat.com" target="_blank">Hipflat</a></li>
+                        <li><a href="https://www.renthub.in.th" target="_blank">RentHub</a></li>
+                        <li><a href="https://www.fazwaz.com" target="_blank">FazWaz</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.prakard.com" target="_blank">Prakard</a></li>
+                            <li><a href="https://www.livinginsider.com" target="_blank">LivingInsider</a></li>
+                            <li><a href="https://www.thailand-property.com" target="_blank">Thailand Property</a></li>
+                            <li><a href="https://www.propertyhub.in.th" target="_blank">Property Hub</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                    </ul>
+                </div>
+
+                <!-- 本地银行 -->
+                <div id="local-banks" class="category-card">
+                    <h2><i class="fas fa-university"></i>Local Banks</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.kasikornbank.com/en/" target="_blank">Kasikorn Bank</a></li>
+                        <li><a href="https://www.scb.co.th/en/" target="_blank">Siam Commercial Bank</a></li>
+                        <li><a href="https://www.bangkokbank.com/en/" target="_blank">Bangkok Bank</a></li>
+                        <li><a href="https://www.krungsri.com/en/" target="_blank">Krungsri Bank</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.tmbbank.com/en/" target="_blank">TMB Bank</a></li>
+                            <li><a href="https://www.ktb.co.th/en/" target="_blank">Krungthai Bank</a></li>
+                            <li><a href="https://www.ghbank.co.th/en/" target="_blank">Government Housing Bank</a></li>
+                            <li><a href="https://www.th.icbc.com.cn/ICBC/en/" target="_blank">ICBC Thailand</a></li>
+                            <li><a href="https://www.citibank.co.th/en/" target="_blank">Citibank Thailand</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Banks</button>
+                    </ul>
+                </div>
+
+                <!-- 医院 -->
+                <div id="hospitals" class="category-card">
+                    <h2><i class="fas fa-hospital"></i>Hospitals</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.bumrungrad.com/en/" target="_blank">Bumrungrad International Hospital</a></li>
+                        <li><a href="https://www.bangkokhospital.com/en/" target="_blank">Bangkok Hospital</a></li>
+                        <li><a href="https://www.samitivejhospitals.com/en/" target="_blank">Samitivej Hospital</a></li>
+                        <li><a href="https://www.vejthani.com/en/" target="_blank">Vejthani Hospital</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.phyathai.com/en/" target="_blank">Phyathai Hospital</a></li>
+                            <li><a href="https://www.ram-hosp.co.th/en/" target="_blank">Ramkhamhaeng Hospital</a></li>
+                            <li><a href="https://www.medparkhospital.com/en/" target="_blank">MedPark Hospital</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Hospitals</button>
+                    </ul>
+                </div>
+
+                <!-- 保险资源 -->
+                <div id="insurance" class="category-card">
+                    <h2><i class="fas fa-shield-alt"></i>Insurance Resources</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.aia.co.th/en/" target="_blank">AIA Thailand</a></li>
+                        <li><a href="https://www.axa.co.th/en/" target="_blank">AXA Thailand</a></li>
+                        <li><a href="https://www.manulife.co.th/en/" target="_blank">Manulife Thailand</a></li>
+                        <li><a href="https://www.prudential.co.th/en/" target="_blank">Prudential Thailand</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.muangthai.co.th/en/" target="_blank">Muang Thai Life Assurance</a></li>
+                            <li><a href="https://www.thailife.com/en/" target="_blank">Thai Life Insurance</a></li>
+                            <li><a href="https://www.thaivivat.co.th/en/" target="_blank">Thai Vivat Insurance</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Insurance</button>
+                    </ul>
+                </div>
             </div>
-        </nav>
-        
-        <main class="main-content">
-            <div class="card">
-                <h1>Welcome to Thaikit.net</h1>
-                <p>Your navigation website for Thailand-related resources.</p>
+        </div>
+
+        <!-- Lifestyle 模块 -->
+        <div id="lifestyle">
+            <h1 class="page-title">Lifestyle</h1>
+            
+            <div class="category-grid">
+                <!-- 日常生活 -->
+                <div id="daily-life" class="category-card">
+                    <h2><i class="fas fa-home"></i>Daily Life</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.central.co.th/" target="_blank">Central Department Store</a></li>
+                        <li><a href="https://www.robinson.co.th/" target="_blank">Robinson Department Store</a></li>
+                        <li><a href="https://www.themallgroup.com/" target="_blank">The Mall Group</a></li>
+                        <li><a href="https://www.tops.co.th/" target="_blank">Tops Market</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.bigc.co.th/" target="_blank">Big C Supercenter</a></li>
+                            <li><a href="https://www.tesco.co.th/" target="_blank">Tesco Lotus</a></li>
+                            <li><a href="https://www.makro.co.th/" target="_blank">Makro</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Places</button>
+                    </ul>
+                </div>
+
+                <!-- 外卖平台 -->
+                <div id="food-delivery" class="category-card">
+                    <h2><i class="fas fa-utensils"></i>Food Delivery Platforms</h2>
+                    <ul class="link-list">
+                        <li><a href="https://food.grab.com/th/" target="_blank">GrabFood</a></li>
+                        <li><a href="https://www.foodpanda.co.th/" target="_blank">Foodpanda</a></li>
+                        <li><a href="https://www.lineman.in.th/" target="_blank">LINE MAN</a></li>
+                        <li><a href="https://robinhood.in.th/" target="_blank">Robinhood</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.gojek.com/th/food/" target="_blank">GoFood</a></li>
+                            <li><a href="https://www.skootar.com/" target="_blank">Skootar</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                    </ul>
+                </div>
+
+                <!-- 交通 -->
+                <div id="transportation" class="category-card">
+                    <h2><i class="fas fa-bus"></i>Transportation</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.mrta.co.th/" target="_blank">Bangkok Mass Transit Authority</a></li>
+                        <li><a href="https://www.bts.co.th/" target="_blank">BTS Skytrain</a></li>
+                        <li><a href="https://www.mrta.co.th/th/services/mrt-blue-line/" target="_blank">MRT Subway</a></li>
+                        <li><a href="https://www.srtet.co.th/index.php/en/" target="_blank">Airport Rail Link</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.bangkokbusclub.com/" target="_blank">Bangkok Bus Routes</a></li>
+                            <li><a href="https://www.grab.com/th/" target="_blank">Grab</a></li>
+                            <li><a href="https://bolt.eu/th/" target="_blank">Bolt</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Options</button>
+                    </ul>
+                </div>
+
+                <!-- 演出展览 -->
+                <div id="shows-exhibitions" class="category-card">
+                    <h2><i class="fas fa-theater-masks"></i>Shows & Exhibitions</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.qsncc.com/" target="_blank">Queen Sirikit National Convention Center</a></li>
+                        <li><a href="https://impact.co.th/" target="_blank">IMPACT Exhibition Center</a></li>
+                        <li><a href="https://www.bacc.or.th/" target="_blank">Bangkok Art and Culture Centre</a></li>
+                        <li><a href="https://www.mocabangkok.com/" target="_blank">Museum of Contemporary Art</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.thailandticketmaster.com/" target="_blank">Ticket Master Thailand</a></li>
+                            <li><a href="https://www.thaiticketmajor.com/" target="_blank">Thai Ticket Major</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Events</button>
+                    </ul>
+                </div>
+
+                <!-- 电影院 -->
+                <div id="movies-cinemas" class="category-card">
+                    <h2><i class="fas fa-film"></i>Movies & Cinemas</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.majorcineplex.com/" target="_blank">Major Cineplex</a></li>
+                        <li><a href="https://www.sfcinema.com/" target="_blank">SF Cinema City</a></li>
+                        <li><a href="https://www.paragoncineplex.com/" target="_blank">Paragon Cineplex</a></li>
+                        <li><a href="https://www.centralworldcinema.com/" target="_blank">Central Cinema</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.emquartier.co.th/en/entertainment/emp-cinema/" target="_blank">EMP Cinema</a></li>
+                            <li><a href="https://www.iconsiam.com/en/iconic-stores/true-icon-hall" target="_blank">True ICON Hall</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Cinemas</button>
+                    </ul>
+                </div>
+
+                <!-- 媒体新闻 -->
+                <div id="media-news" class="category-card">
+                    <h2><i class="fas fa-newspaper"></i>Media & News</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.bangkokpost.com/" target="_blank">Bangkok Post</a></li>
+                        <li><a href="https://www.nationthailand.com/" target="_blank">The Nation Thailand</a></li>
+                        <li><a href="https://www.thaipbs.or.th/" target="_blank">Thai PBS</a></li>
+                        <li><a href="https://www.workpointtoday.com/" target="_blank">Workpoint TV</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.khaosodenglish.com/" target="_blank">Khaosod English</a></li>
+                            <li><a href="https://thethaiger.com/" target="_blank">The Thaiger</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Media</button>
+                    </ul>
+                </div>
+
+                <!-- 旅游观光 -->
+                <div id="travel-tourism" class="category-card">
+                    <h2><i class="fas fa-plane"></i>Travel & Tourism</h2>
+                    <ul class="link-list">
+                        <li><a href="https://www.tourismthailand.org/" target="_blank">Tourism Authority of Thailand</a></li>
+                        <li><a href="https://www.agoda.com/" target="_blank">Agoda</a></li>
+                        <li><a href="https://www.booking.com/" target="_blank">Booking.com</a></li>
+                        <li><a href="https://www.trip.com/" target="_blank">Trip.com</a></li>
+                        <div class="expandable-content" style="display: none;">
+                            <li><a href="https://www.expedia.co.th/" target="_blank">Expedia Thailand</a></li>
+                            <li><a href="https://www.klook.com/" target="_blank">Klook</a></li>
+                            <li><a href="https://www.tripadvisor.com/" target="_blank">TripAdvisor</a></li>
+                        </div>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                    </ul>
+                </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 导航栏点击事件
+            document.querySelectorAll('.nav-link, .submenu-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // 平滑滚动到目标位置
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                    
+                    // 如果点击的是主导航项
+                    if (link.classList.contains('nav-link')) {
+                        const navItem = link.closest('.nav-item');
+                        
+                        // 移除其他项的 active 类
+                        document.querySelectorAll('.nav-item').forEach(item => {
+                            if (item !== navItem) {
+                                item.classList.remove('active');
+                            }
+                        });
+                        
+                        // 切换当前项的 active 类
+                        navItem.classList.toggle('active');
+                    }
+                });
+            });
+
+            // 展开/收起功能
+            function toggleContent(button) {
+                const content = button.previousElementSibling;
+                if (content.style.display === 'none') {
+                    content.style.display = 'block';
+                    button.textContent = 'Show Less';
+                    // 添加动画效果
+                    setTimeout(() => {
+                        content.querySelectorAll('li').forEach((li, index) => {
+                            setTimeout(() => {
+                                li.style.opacity = '1';
+                                li.style.transform = 'translateY(0)';
+                            }, index * 50);
+                        });
+                    }, 0);
+                } else {
+                    content.querySelectorAll('li').forEach(li => {
+                        li.style.opacity = '0';
+                        li.style.transform = 'translateY(-10px)';
+                    });
+                    setTimeout(() => {
+                        content.style.display = 'none';
+                        button.textContent = button.textContent.replace('Show Less', 'Show More');
+                    }, 300);
+                }
+            }
+        });
+    </script>
 </body>
 </html> 
