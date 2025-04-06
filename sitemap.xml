@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- 英文版本 -->
+    <url>
+        <loc>https://thaikit.net/en/</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thaikit.net/en/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://thaikit.net/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://thaikit.net/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://thaikit.net/ja/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
+    </url>
+
+    <!-- 简体中文版本 -->
+    <url>
+        <loc>https://thaikit.net/zh-cn/</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thaikit.net/en/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://thaikit.net/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://thaikit.net/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://thaikit.net/ja/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
+    </url>
+
+    <!-- 繁体中文版本 -->
+    <url>
+        <loc>https://thaikit.net/zh-tw/</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thaikit.net/en/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://thaikit.net/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://thaikit.net/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://thaikit.net/ja/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
+    </url>
+
+    <!-- 日语版本 -->
+    <url>
+        <loc>https://thaikit.net/ja/</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thaikit.net/en/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://thaikit.net/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://thaikit.net/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://thaikit.net/ja/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
+    </url>
+
+    <!-- 泰语版本 -->
+    <url>
+        <loc>https://thaikit.net/th/</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thaikit.net/en/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://thaikit.net/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://thaikit.net/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://thaikit.net/ja/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
+    </url>
+
+    <!-- 默认版本 -->
+    <url>
+        <loc>https://thaikit.net/</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thaikit.net/en/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://thaikit.net/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://thaikit.net/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://thaikit.net/ja/" />
+        <xhtml:link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
+    </url>
+</urlset> 
