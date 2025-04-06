@@ -661,21 +661,36 @@
                 <div id="payment-tools" class="category-card">
                     <h2><i class="fas fa-credit-card"></i>Payment & Receipt Tools</h2>
                     <ul class="link-list">
-                        <li><strong>Mobile Payment</strong></li>
-                        <li><a href="https://www.promptpay.co.th/" target="_blank">PromptPay</a></li>
-                        <li><a href="https://www.truemoney.com/" target="_blank">TrueMoney Wallet</a></li>
-                        <li><a href="https://www.rabbit.co.th/" target="_blank">Rabbit LINE Pay</a></li>
+                        <!-- 电子钱包 -->
+                        <li><strong>E-Wallets</strong></li>
+                        <li><a href="https://www.truemoney.com/wallet" target="_blank">TrueMoney Wallet</a></li>
+                        <li><a href="https://www.rabbit.co.th/linepay" target="_blank">Rabbit LINE Pay</a></li>
+                        <li><a href="https://www.shopeepay.co.th" target="_blank">ShopeePay</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><strong>E-Wallets</strong></li>
-                            <li><a href="https://www.scb.co.th/en/personal-banking/digital-banking/scb-easy.html" target="_blank">SCB Easy</a></li>
-                            <li><a href="https://www.kasikornbank.com/en/personal/digital-banking/pages/k-plus.aspx" target="_blank">K PLUS</a></li>
-                            <li><a href="https://www.bangkokbank.com/en/Personal/Digital-Banking/Mobile-Banking" target="_blank">Bangkok Bank Mobile</a></li>
-                            <li><strong>Payment Gateways</strong></li>
-                            <li><a href="https://www.omise.co/th" target="_blank">Omise</a></li>
-                            <li><a href="https://www.2c2p.com/" target="_blank">2C2P</a></li>
-                            <li><a href="https://www.gbprimepay.com/" target="_blank">GB Prime Pay</a></li>
+                            <!-- 国际支付工具 -->
+                            <li><strong>International Payment</strong></li>
+                            <li><a href="https://wise.com" target="_blank">Wise (International Transfer)</a></li>
+                            <li><a href="https://www.paypal.com/th" target="_blank">PayPal Thailand</a></li>
+                            <li><a href="https://www.westernunion.com/th/en/home.html" target="_blank">Western Union Thailand</a></li>
+                            
+                            <!-- 二维码支付 -->
+                            <li><strong>QR Payment</strong></li>
+                            <li><a href="https://www.bot.or.th/Thai/PaymentSystems/StandardPS/Pages/default.aspx" target="_blank">PromptPay (Thai QR Standard)</a></li>
+                            <li><a href="https://www.alipay.com/global" target="_blank">Alipay</a></li>
+                            <li><a href="https://www.wechat.com/en/pay.html" target="_blank">WeChat Pay</a></li>
+                            
+                            <!-- POS系统 -->
+                            <li><strong>POS Systems</strong></li>
+                            <li><a href="https://www.gbprimepay.com" target="_blank">GB Prime Pay</a></li>
+                            <li><a href="https://www.omise.co/th" target="_blank">Omise Payment</a></li>
+                            <li><a href="https://www.bangkokbank.com/en/Business-Banking/Other-Services/Payment-Solutions" target="_blank">Bangkok Bank EDC</a></li>
+                            
+                            <!-- 发票工具 -->
+                            <li><strong>Invoice & Receipt</strong></li>
+                            <li><a href="https://www.rd.go.th/2498.html" target="_blank">e-Tax Invoice & e-Receipt</a></li>
+                            <li><a href="https://www.flowaccount.com" target="_blank">FlowAccount</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Tools</button>
                     </ul>
                 </div>
 
@@ -688,10 +703,19 @@
                         <li><a href="https://www.tiktok.com/shop/" target="_blank">TikTok Shop Thailand</a></li>
                         <li><a href="https://www.jd.co.th/" target="_blank">JD Central</a></li>
                         <div class="expandable-content" style="display: none;">
+                            <!-- B2B平台 -->
+                            <li><strong>B2B Platforms</strong></li>
+                            <li><a href="https://www.taimro.com/" target="_blank">TAIMRO (Industrial Procurement)</a></li>
+                            
+                            <!-- 电商平台 -->
+                            <li><strong>E-commerce Platforms</strong></li>
                             <li><a href="https://www.amazon.co.th/" target="_blank">Amazon Thailand</a></li>
                             <li><a href="https://www.facebook.com/business/" target="_blank">Facebook Business</a></li>
                             <li><a href="https://business.instagram.com/" target="_blank">Instagram Business</a></li>
                             <li><a href="https://linebiz.com/th/" target="_blank">LINE Business</a></li>
+                            
+                            <!-- 物流服务 -->
+                            <li><strong>Logistics Services</strong></li>
                             <li><a href="https://www.flashexpress.co.th/" target="_blank">Flash Express</a></li>
                             <li><a href="https://th.kerryexpress.com/" target="_blank">Kerry Express</a></li>
                             <li><a href="https://www.thailandpost.co.th/" target="_blank">Thailand Post</a></li>
@@ -771,7 +795,73 @@
                 </div>
             </div>
         </div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">About</h2>
+            <div class="category-grid">
+                <!-- About ThaiKit Card -->
+                <div class="category-card" id="about-thaikit">
+                    <h2><i class="fas fa-info-circle"></i> About ThaiKit</h2>
+                    <div class="about-content">
+                        <p class="welcome-text">Welcome to ThaiKit - Your Ultimate Resource Hub for Thailand!</p>
+                        <p>ThaiKit is a curated directory and resource hub designed specifically for expats, digital nomads, entrepreneurs, and students who are navigating life in Thailand. Whether you're applying for a visa, setting up a local bank account, finding an apartment, launching a business, or simply looking for the best mobile plan — we've got you covered.</p>
+                    </div>
+                </div>
+
+                <!-- Our Services Card -->
+                <div class="category-card" id="our-services">
+                    <h2><i class="fas fa-handshake"></i> Our Services</h2>
+                    <div class="about-content">
+                        <p>We provide:</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Reliable information from trusted sources</li>
+                            <li><i class="fas fa-link"></i> Links to official websites and practical platforms</li>
+                            <li><i class="fas fa-lightbulb"></i> Local tips written with foreigners in mind</li>
+                            <li><i class="fas fa-language"></i> Multi-language support for English, Chinese, Japanese, and Thai</li>
+                        </ul>
+                        <p class="goal-text">Our goal is to save you time, avoid confusion, and help you thrive in Thailand.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Us Card -->
+                <div class="category-card" id="contact-us">
+                    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                    <div class="contact-content">
+                        <ul class="contact-list">
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:contact@thaikit.com">contact@thaikit.com</a></li>
+                            <li><i class="fas fa-phone"></i> <a href="tel:+66936677021">+66 93 667 7021</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> Bangkok, Thailand</li>
+                        </ul>
+                        
+                        <!-- 社交媒体二维码 -->
+                        <div class="social-qr-codes">
+                            <h3>Follow Us on Social Media</h3>
+                            <div class="qr-grid">
+                                <div class="qr-item">
+                                    <img src="https://i.imgur.com/LGryo9e.jpeg" alt="WeChat QR Code" class="qr-image">
+                                    <p>WeChat</p>
+                                </div>
+                                <div class="qr-item">
+                                    <img src="https://i.imgur.com/7gH4lJg.jpeg" alt="Instagram QR Code" class="qr-image">
+                                    <p>Instagram</p>
+                                </div>
+                                <div class="qr-item">
+                                    <img src="https://i.imgur.com/QYh03By.jpeg" alt="Line QR Code" class="qr-image">
+                                    <p>Line</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- 版本信息 -->
+    <footer class="version-info">
+        <p>Version 1.0.0</p>
+    </footer>
 
     <!-- JavaScript -->
     <script>

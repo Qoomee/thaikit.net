@@ -678,4 +678,164 @@ body {
 .category-title:hover {
     /* 重置所有相关样式 */
     all: unset;
+}
+
+/* 版本信息样式 */
+.version-info {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.version-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* About Section Styles */
+.about-section {
+    margin-top: 48px;
+    padding: 32px;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.about-content {
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.feature-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.goal-text {
+    font-style: italic;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.contact-content {
+    padding: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-list li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* 社交媒体二维码样式 */
+.social-qr-codes {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.social-qr-codes h3 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.qr-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.qr-item {
+    text-align: center;
+}
+
+.qr-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qr-item p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .qr-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .qr-image {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .qr-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .qr-image {
+        width: 80px;
+        height: 80px;
+    }
 } 
