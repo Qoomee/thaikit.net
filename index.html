@@ -23,6 +23,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="/">ThaiKit</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links">
+                    <a href="#essentials">Essentials</a>
+                    <a href="#lifestyle">Lifestyle</a>
+                    <a href="#work">Work & Jobs</a>
+                    <a href="#business">Business</a>
+                    <a href="#learning">Learning</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="nav-links">
+                <a href="#essentials">Essentials</a>
+                <a href="#lifestyle">Lifestyle</a>
+                <a href="#work">Work & Jobs</a>
+                <a href="#business">Business</a>
+                <a href="#learning">Learning</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </header>
+
     <!-- 左侧导航栏 -->
     <nav class="sidebar">
         <a href="/" class="logo">ThaiKit</a>
@@ -924,6 +955,28 @@
                     }
                 });
             });
+        });
+
+        // 移动端菜单交互
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelectorAll('.mobile-menu .nav-links a');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // 监听窗口大小变化
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 480) {
+                mobileMenu.classList.remove('active');
+            }
         });
     </script>
 </body>
