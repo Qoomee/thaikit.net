@@ -203,19 +203,21 @@
                     <ul class="link-list">
                         <li><a href="https://www.immigration.go.th/" target="_blank">Thai Immigration Bureau</a></li>
                         <li><a href="https://www.thaiembassy.org/" target="_blank">Thai Embassy Information</a></li>
-                        <li><a href="https://www.thailandelite.com/" target="_blank">Thailand Elite Visa</a></li>
-                        <li><a href="https://www.boi.go.th/smart-visa/" target="_blank">BOI Smart Visa</a></li>
+                        <li><a href="https://www.immigration.go.th/en/elite-visa/" target="_blank">Thailand Elite Visa</a></li>
+                        <li><a href="https://www.boi.go.th/en/smart-visa" target="_blank">BOI Smart Visa</a></li>
                         <div class="expandable-content" style="display: none;">
                             <li><a href="https://thailand.embassy.gov.au/" target="_blank">Australian Embassy Bangkok</a></li>
                             <li><a href="https://www.gov.uk/world/organisations/british-embassy-bangkok" target="_blank">British Embassy Bangkok</a></li>
                             <li><a href="https://th.usembassy.gov/" target="_blank">U.S. Embassy Bangkok</a></li>
-                            <li><a href="http://th.china-embassy.gov.cn/" target="_blank">Chinese Embassy Bangkok</a></li>
-                            <li><a href="https://www.th.emb-japan.go.jp/" target="_blank">Japanese Embassy Bangkok</a></li>
+                            <li><a href="http://www.chinaembassy.or.th/eng/" target="_blank">Chinese Embassy Bangkok</a></li>
+                            <li><a href="https://www.th.emb-japan.go.jp/itprtop_en/index.html" target="_blank">Japanese Embassy Bangkok</a></li>
                             <li><a href="https://overseas.mofa.go.kr/th-en/index.do" target="_blank">Korean Embassy Bangkok</a></li>
-                            <li><a href="https://bangkok.diplo.de/" target="_blank">German Embassy Bangkok</a></li>
-                            <li><a href="https://th.ambafrance.org/" target="_blank">French Embassy Bangkok</a></li>
+                            <li><a href="https://bangkok.diplo.de/th-en" target="_blank">German Embassy Bangkok</a></li>
+                            <li><a href="https://th.ambafrance.org/-English-" target="_blank">French Embassy Bangkok</a></li>
+                            <li><a href="https://www.vfsglobal.com/en/individuals/thailand.html" target="_blank">VFS Global Visa Center</a></li>
+                            <li><a href="https://www.tlscontact.com/th2fr/splash.php" target="_blank">TLScontact Visa Center</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Embassies</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Information</button>
                     </ul>
                 </div>
 
@@ -682,6 +684,33 @@
 
     <!-- JavaScript -->
     <script>
+        // 全局定义 toggleContent 函数
+        function toggleContent(button) {
+            const content = button.previousElementSibling;
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                button.textContent = 'Show Less';
+                // 添加动画效果
+                setTimeout(() => {
+                    content.querySelectorAll('li').forEach((li, index) => {
+                        setTimeout(() => {
+                            li.style.opacity = '1';
+                            li.style.transform = 'translateY(0)';
+                        }, index * 50);
+                    });
+                }, 0);
+            } else {
+                content.querySelectorAll('li').forEach(li => {
+                    li.style.opacity = '0';
+                    li.style.transform = 'translateY(-10px)';
+                });
+                setTimeout(() => {
+                    content.style.display = 'none';
+                    button.textContent = button.textContent.replace('Less', 'More');
+                }, 300);
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             // 导航栏点击事件
             document.querySelectorAll('.nav-link, .submenu-link').forEach(link => {
@@ -714,33 +743,6 @@
                     }
                 });
             });
-
-            // 展开/收起功能
-            function toggleContent(button) {
-                const content = button.previousElementSibling;
-                if (content.style.display === 'none') {
-                    content.style.display = 'block';
-                    button.textContent = 'Show Less';
-                    // 添加动画效果
-                    setTimeout(() => {
-                        content.querySelectorAll('li').forEach((li, index) => {
-                            setTimeout(() => {
-                                li.style.opacity = '1';
-                                li.style.transform = 'translateY(0)';
-                            }, index * 50);
-                        });
-                    }, 0);
-                } else {
-                    content.querySelectorAll('li').forEach(li => {
-                        li.style.opacity = '0';
-                        li.style.transform = 'translateY(-10px)';
-                    });
-                    setTimeout(() => {
-                        content.style.display = 'none';
-                        button.textContent = button.textContent.replace('Show Less', 'Show More');
-                    }, 300);
-                }
-            }
         });
     </script>
 </body>

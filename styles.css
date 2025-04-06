@@ -660,4 +660,15 @@ body {
     #learning .category-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* 移除签证信息卡片的特殊样式 */
+.category-title,
+.category-title strong,
+.category-title .expandable-content,
+.category-title .expandable-content li,
+.category-title .show-more-btn,
+.category-title:hover {
+    /* 重置所有相关样式 */
+    all: unset;
 } 
