@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ThaiKit - Your Guide to Thailand</title>
+    <title>ThaiKit - 您的泰国生活指南</title>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC7XH7DB2X"></script>
@@ -16,13 +16,15 @@
     </script>
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://thaikit.net/en/" />
+    <link rel="canonical" href="https://thaikit.net/zh-cn/" />
     
     <!-- 多语言 hreflang 标签 -->
     <link rel="alternate" hreflang="en" href="https://thaikit.net/en/" />
     <link rel="alternate" hreflang="zh-CN" href="https://thaikit.net/zh-cn/" />
     <link rel="alternate" hreflang="zh-TW" href="https://thaikit.net/zh-tw/" />
     <link rel="alternate" hreflang="ja" href="https://thaikit.net/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://thaikit.net/ko/" />
+    <link rel="alternate" hreflang="ru" href="https://thaikit.net/ru/" />
     <link rel="alternate" hreflang="th" href="https://thaikit.net/th/" />
     <link rel="alternate" hreflang="x-default" href="https://thaikit.net/" />
     
@@ -33,6 +35,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- 语言切换器 -->
+    <div class="language-switcher">
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="zh-cn">简体中文</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="ru">Русский</option>
+            <option value="th">ไทย</option>
+            <option value="zh-tw">繁體中文</option>
+        </select>
+    </div>
+
     <!-- 左侧导航栏 -->
     <nav class="sidebar">
         <a href="/" class="logo">ThaiKit</a>
@@ -41,7 +56,7 @@
                 <a href="#essentials" class="nav-link">
                     <div class="link-content">
                         <i class="fas fa-compass"></i>
-                        <span>Essentials</span>
+                        <span>生活必备</span>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                 </a>
@@ -49,37 +64,37 @@
                     <li class="submenu-item">
                         <a href="#visa-information" class="submenu-link">
                             <i class="fas fa-passport"></i>
-                            Visa Information
+                            签证信息
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#phone-card" class="submenu-link">
                             <i class="fas fa-mobile-alt"></i>
-                            Phone Card/Broadband
+                            电话卡/宽带
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#house-rental" class="submenu-link">
                             <i class="fas fa-home"></i>
-                            House Rental Platform
+                            租房平台
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#local-banks" class="submenu-link">
                             <i class="fas fa-university"></i>
-                            Local Banks
+                            本地银行
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#hospitals" class="submenu-link">
                             <i class="fas fa-hospital"></i>
-                            Hospitals
+                            医院
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#insurance" class="submenu-link">
                             <i class="fas fa-shield-alt"></i>
-                            Insurance Resources
+                            保险资源
                         </a>
                     </li>
                 </ul>
@@ -90,7 +105,7 @@
                 <a href="#lifestyle" class="nav-link">
                     <div class="link-content">
                         <i class="fas fa-umbrella-beach"></i>
-                        <span>Lifestyle</span>
+                        <span>生活方式</span>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                 </a>
@@ -98,55 +113,55 @@
                     <li class="submenu-item">
                         <a href="#daily-life" class="submenu-link">
                             <i class="fas fa-home"></i>
-                            Daily Life
+                            日常生活
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#food-delivery" class="submenu-link">
                             <i class="fas fa-utensils"></i>
-                            Food Delivery
+                            外卖平台
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#transportation" class="submenu-link">
                             <i class="fas fa-bus"></i>
-                            Transportation
+                            交通出行
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#shows-exhibitions" class="submenu-link">
                             <i class="fas fa-theater-masks"></i>
-                            Shows & Exhibitions
+                            演出展览
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#movies-cinemas" class="submenu-link">
                             <i class="fas fa-film"></i>
-                            Movies & Cinemas
+                            电影影院
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#media-news" class="submenu-link">
                             <i class="fas fa-newspaper"></i>
-                            Media & News
+                            媒体新闻
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#travel-tourism" class="submenu-link">
                             <i class="fas fa-plane"></i>
-                            Travel & Tourism
+                            旅游观光
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#fitness-sports" class="submenu-link">
                             <i class="fas fa-dumbbell"></i>
-                            Fitness & Sports
+                            健身运动
                         </a>
                     </li>
                     <li class="submenu-item">
                         <a href="#famous-events" class="submenu-link">
                             <i class="fas fa-calendar-alt"></i>
-                            Famous Events
+                            著名活动
                         </a>
                     </li>
                 </ul>
@@ -157,14 +172,14 @@
                 <a href="#work-jobs" class="nav-link">
                     <div class="link-content">
                         <i class="fas fa-briefcase"></i>
-                        <span>Work & Jobs</span>
+                        <span>工作与就业</span>
                         <i class="fas fa-chevron-right arrow"></i>
                     </div>
                 </a>
                 <ul class="submenu">
-                    <li><a href="#work-jobs" class="submenu-link"><i class="fas fa-briefcase"></i>Recruitment Platforms</a></li>
-                    <li><a href="#work-jobs" class="submenu-link"><i class="fas fa-laptop"></i>Freelance Platforms</a></li>
-                    <li><a href="#experience-sharing" class="submenu-link"><i class="fas fa-comments"></i>Experience Sharing Forum</a></li>
+                    <li><a href="#work-jobs" class="submenu-link"><i class="fas fa-briefcase"></i>招聘平台</a></li>
+                    <li><a href="#work-jobs" class="submenu-link"><i class="fas fa-laptop"></i>自由职业平台</a></li>
+                    <li><a href="#experience-sharing" class="submenu-link"><i class="fas fa-comments"></i>经验分享论坛</a></li>
                 </ul>
             </li>
 
@@ -173,16 +188,16 @@
                 <a href="#business" class="nav-link">
                     <div class="link-content">
                         <i class="fas fa-chart-line"></i>
-                        <span>Business</span>
+                        <span>商业</span>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                 </a>
                 <ul class="submenu">
-                    <li><a href="#company-registration" class="submenu-link"><i class="fas fa-file-alt"></i>Company Registration</a></li>
-                    <li><a href="#tax-accounting" class="submenu-link"><i class="fas fa-coins"></i>Tax & Accounting</a></li>
-                    <li><a href="#networking" class="submenu-link"><i class="fas fa-handshake"></i>Networking</a></li>
-                    <li><a href="#payment-tools" class="submenu-link"><i class="fas fa-credit-card"></i>Payment Tools</a></li>
-                    <li><a href="#ecommerce" class="submenu-link"><i class="fas fa-shopping-bag"></i>E-commerce</a></li>
+                    <li><a href="#company-registration" class="submenu-link"><i class="fas fa-file-alt"></i>公司注册</a></li>
+                    <li><a href="#tax-accounting" class="submenu-link"><i class="fas fa-coins"></i>税务与会计</a></li>
+                    <li><a href="#networking" class="submenu-link"><i class="fas fa-handshake"></i>商务社交</a></li>
+                    <li><a href="#payment-tools" class="submenu-link"><i class="fas fa-credit-card"></i>支付工具</a></li>
+                    <li><a href="#ecommerce" class="submenu-link"><i class="fas fa-shopping-bag"></i>电子商务</a></li>
                 </ul>
             </li>
 
@@ -191,14 +206,14 @@
                 <a href="#learning" class="nav-link">
                     <div class="link-content">
                         <i class="fas fa-graduation-cap"></i>
-                        <span>Learning</span>
+                        <span>学习</span>
                         <i class="fas fa-chevron-down arrow"></i>
                     </div>
                 </a>
                 <ul class="submenu">
-                    <li><a href="#thai-language" class="submenu-link"><i class="fas fa-language"></i>Thai Language</a></li>
-                    <li><a href="#universities" class="submenu-link"><i class="fas fa-university"></i>Universities & Schools</a></li>
-                    <li><a href="#skill-development" class="submenu-link"><i class="fas fa-brain"></i>Skill Development</a></li>
+                    <li><a href="#thai-language" class="submenu-link"><i class="fas fa-language"></i>泰语学习</a></li>
+                    <li><a href="#universities" class="submenu-link"><i class="fas fa-university"></i>大学与学校</a></li>
+                    <li><a href="#skill-development" class="submenu-link"><i class="fas fa-brain"></i>技能发展</a></li>
                 </ul>
             </li>
 
@@ -207,7 +222,7 @@
                 <a href="#about" class="nav-link">
                     <div class="link-content">
                         <i class="fas fa-info-circle"></i>
-                        <span>About</span>
+                        <span>关于</span>
                     </div>
                 </a>
             </li>
@@ -217,55 +232,55 @@
     <!-- 主要内容区域 -->
     <main class="main-content">
         <div id="essentials">
-            <h1 class="page-title">Essentials</h1>
+            <h1 class="page-title">生活必备</h1>
             
             <div class="category-grid">
                 <!-- 签证信息 -->
                 <div id="visa-information" class="category-card">
-                    <h2><i class="fas fa-passport"></i>Visa Information</h2>
+                    <h2><i class="fas fa-passport"></i>签证信息</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.immigration.go.th/" target="_blank">Thai Immigration Bureau</a></li>
-                        <li><a href="https://www.thaiembassy.org/" target="_blank">Thai Embassy Information</a></li>
-                        <li><a href="https://www.immigration.go.th/en/elite-visa/" target="_blank">Thailand Elite Visa</a></li>
-                        <li><a href="https://www.boi.go.th/en/smart-visa" target="_blank">BOI Smart Visa</a></li>
+                        <li><a href="https://www.immigration.go.th/" target="_blank">泰国移民局</a></li>
+                        <li><a href="https://www.thaiembassy.org/" target="_blank">泰国大使馆信息</a></li>
+                        <li><a href="https://www.immigration.go.th/en/elite-visa/" target="_blank">泰国精英签证</a></li>
+                        <li><a href="https://www.boi.go.th/en/smart-visa" target="_blank">BOI智能签证</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://thailand.embassy.gov.au/" target="_blank">Australian Embassy Bangkok</a></li>
-                            <li><a href="https://www.gov.uk/world/organisations/british-embassy-bangkok" target="_blank">British Embassy Bangkok</a></li>
-                            <li><a href="https://th.usembassy.gov/" target="_blank">U.S. Embassy Bangkok</a></li>
-                            <li><a href="http://www.chinaembassy.or.th/eng/" target="_blank">Chinese Embassy Bangkok</a></li>
-                            <li><a href="https://www.th.emb-japan.go.jp/itprtop_en/index.html" target="_blank">Japanese Embassy Bangkok</a></li>
-                            <li><a href="https://overseas.mofa.go.kr/th-en/index.do" target="_blank">Korean Embassy Bangkok</a></li>
-                            <li><a href="https://bangkok.diplo.de/th-en" target="_blank">German Embassy Bangkok</a></li>
-                            <li><a href="https://th.ambafrance.org/-English-" target="_blank">French Embassy Bangkok</a></li>
-                            <li><a href="https://www.vfsglobal.com/en/individuals/thailand.html" target="_blank">VFS Global Visa Center</a></li>
-                            <li><a href="https://www.tlscontact.com/th2fr/splash.php" target="_blank">TLScontact Visa Center</a></li>
+                            <li><a href="https://thailand.embassy.gov.au/" target="_blank">澳大利亚驻曼谷大使馆</a></li>
+                            <li><a href="https://www.gov.uk/world/organisations/british-embassy-bangkok" target="_blank">英国驻曼谷大使馆</a></li>
+                            <li><a href="https://th.usembassy.gov/" target="_blank">美国驻曼谷大使馆</a></li>
+                            <li><a href="http://www.chinaembassy.or.th/eng/" target="_blank">中国驻曼谷大使馆</a></li>
+                            <li><a href="https://www.th.emb-japan.go.jp/itprtop_en/index.html" target="_blank">日本驻曼谷大使馆</a></li>
+                            <li><a href="https://overseas.mofa.go.kr/th-en/index.do" target="_blank">韩国驻曼谷大使馆</a></li>
+                            <li><a href="https://bangkok.diplo.de/th-en" target="_blank">德国驻曼谷大使馆</a></li>
+                            <li><a href="https://th.ambafrance.org/-English-" target="_blank">法国驻曼谷大使馆</a></li>
+                            <li><a href="https://www.vfsglobal.com/en/individuals/thailand.html" target="_blank">VFS Global签证中心</a></li>
+                            <li><a href="https://www.tlscontact.com/th2fr/splash.php" target="_blank">TLScontact签证中心</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Information</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多信息</button>
                     </ul>
                 </div>
 
                 <!-- 电话卡/宽带推荐 -->
                 <div id="phone-card" class="category-card">
-                    <h2><i class="fas fa-mobile-alt"></i>Phone Card/Broadband</h2>
+                    <h2><i class="fas fa-mobile-alt"></i>电话卡/宽带</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.ais.th/consumers" target="_blank">AIS Mobile & Fibre</a></li>
+                        <li><a href="https://www.ais.th/consumers" target="_blank">AIS移动与光纤</a></li>
                         <li><a href="https://www.true.th" target="_blank">True Corporation</a></li>
-                        <li><a href="https://www.dtac.co.th/en" target="_blank">DTAC Mobile</a></li>
-                        <li><a href="https://www.ais.th/fibre/package" target="_blank">AIS Fibre Packages</a></li>
+                        <li><a href="https://www.dtac.co.th/en" target="_blank">DTAC移动</a></li>
+                        <li><a href="https://www.ais.th/fibre/package" target="_blank">AIS光纤套餐</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.3bb.co.th" target="_blank">3BB Broadband</a></li>
+                            <li><a href="https://www.3bb.co.th" target="_blank">3BB宽带</a></li>
                             <li><a href="https://www.true.th/trueonline" target="_blank">True Online</a></li>
-                            <li><a href="https://www.ntplc.co.th" target="_blank">NT (Former TOT)</a></li>
-                            <li><a href="https://www.jaspermobile.com" target="_blank">Jasper Mobile (Tourist SIM)</a></li>
-                            <li><a href="https://www.simthai.com" target="_blank">SIM THAI (Tourist SIM)</a></li>
+                            <li><a href="https://www.ntplc.co.th" target="_blank">NT (原TOT)</a></li>
+                            <li><a href="https://www.jaspermobile.com" target="_blank">Jasper Mobile (游客SIM卡)</a></li>
+                            <li><a href="https://www.simthai.com" target="_blank">SIM THAI (游客SIM卡)</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Services</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多服务</button>
                     </ul>
                 </div>
 
                 <!-- 租房平台 -->
                 <div id="house-rental" class="category-card">
-                    <h2><i class="fas fa-home"></i>House Rental Platform</h2>
+                    <h2><i class="fas fa-home"></i>租房平台</h2>
                     <ul class="link-list">
                         <li><a href="https://www.ddproperty.com" target="_blank">DDproperty</a></li>
                         <li><a href="https://www.hipflat.com" target="_blank">Hipflat</a></li>
@@ -277,60 +292,60 @@
                             <li><a href="https://www.thailand-property.com" target="_blank">Thailand Property</a></li>
                             <li><a href="https://www.propertyhub.in.th" target="_blank">Property Hub</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多平台</button>
                     </ul>
                 </div>
 
                 <!-- 本地银行 -->
                 <div id="local-banks" class="category-card">
-                    <h2><i class="fas fa-university"></i>Local Banks</h2>
+                    <h2><i class="fas fa-university"></i>本地银行</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.kasikornbank.com/en/" target="_blank">Kasikorn Bank</a></li>
-                        <li><a href="https://www.scb.co.th/en/" target="_blank">Siam Commercial Bank</a></li>
-                        <li><a href="https://www.bangkokbank.com/en/" target="_blank">Bangkok Bank</a></li>
-                        <li><a href="https://www.krungsri.com/en/" target="_blank">Krungsri Bank</a></li>
+                        <li><a href="https://www.kasikornbank.com/en/" target="_blank">开泰银行</a></li>
+                        <li><a href="https://www.scb.co.th/en/" target="_blank">暹罗商业银行</a></li>
+                        <li><a href="https://www.bangkokbank.com/en/" target="_blank">曼谷银行</a></li>
+                        <li><a href="https://www.krungsri.com/en/" target="_blank">大城银行</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.tmbbank.com/en/" target="_blank">TMB Bank</a></li>
-                            <li><a href="https://www.ktb.co.th/en/" target="_blank">Krungthai Bank</a></li>
-                            <li><a href="https://www.ghbank.co.th/en/" target="_blank">Government Housing Bank</a></li>
-                            <li><a href="https://www.th.icbc.com.cn/ICBC/en/" target="_blank">ICBC Thailand</a></li>
-                            <li><a href="https://www.citibank.co.th/en/" target="_blank">Citibank Thailand</a></li>
+                            <li><a href="https://www.tmbbank.com/en/" target="_blank">TMB银行</a></li>
+                            <li><a href="https://www.ktb.co.th/en/" target="_blank">泰京银行</a></li>
+                            <li><a href="https://www.ghbank.co.th/en/" target="_blank">政府住房银行</a></li>
+                            <li><a href="https://www.th.icbc.com.cn/ICBC/en/" target="_blank">中国工商银行泰国</a></li>
+                            <li><a href="https://www.citibank.co.th/en/" target="_blank">花旗银行泰国</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Banks</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多银行</button>
                     </ul>
                 </div>
 
                 <!-- 医院 -->
                 <div id="hospitals" class="category-card">
-                    <h2><i class="fas fa-hospital"></i>Hospitals</h2>
+                    <h2><i class="fas fa-hospital"></i>医院</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.bumrungrad.com/en/" target="_blank">Bumrungrad International Hospital</a></li>
-                        <li><a href="https://www.bangkokhospital.com/en/" target="_blank">Bangkok Hospital</a></li>
-                        <li><a href="https://www.samitivejhospitals.com/en/" target="_blank">Samitivej Hospital</a></li>
-                        <li><a href="https://www.vejthani.com/en/" target="_blank">Vejthani Hospital</a></li>
+                        <li><a href="https://www.bumrungrad.com/en/" target="_blank">曼谷医院国际部</a></li>
+                        <li><a href="https://www.bangkokhospital.com/en/" target="_blank">曼谷医院</a></li>
+                        <li><a href="https://www.samitivejhospitals.com/en/" target="_blank">三美泰医院</a></li>
+                        <li><a href="https://www.vejthani.com/en/" target="_blank">威他尼医院</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.phyathai.com/en/" target="_blank">Phyathai Hospital</a></li>
-                            <li><a href="https://www.ram-hosp.co.th/en/" target="_blank">Ramkhamhaeng Hospital</a></li>
-                            <li><a href="https://www.medparkhospital.com/en/" target="_blank">MedPark Hospital</a></li>
+                            <li><a href="https://www.phyathai.com/en/" target="_blank">帕亚泰医院</a></li>
+                            <li><a href="https://www.ram-hosp.co.th/en/" target="_blank">兰甘杏医院</a></li>
+                            <li><a href="https://www.medparkhospital.com/en/" target="_blank">曼谷医疗公园医院</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Hospitals</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多医院</button>
                     </ul>
                 </div>
 
                 <!-- 保险资源 -->
                 <div id="insurance" class="category-card">
-                    <h2><i class="fas fa-shield-alt"></i>Insurance Resources</h2>
+                    <h2><i class="fas fa-shield-alt"></i>保险资源</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.aia.co.th/en/" target="_blank">AIA Thailand</a></li>
-                        <li><a href="https://www.axa.co.th/en/" target="_blank">AXA Thailand</a></li>
-                        <li><a href="https://www.manulife.co.th/en/" target="_blank">Manulife Thailand</a></li>
-                        <li><a href="https://www.prudential.co.th/en/" target="_blank">Prudential Thailand</a></li>
+                        <li><a href="https://www.aia.co.th/en/" target="_blank">友邦保险泰国</a></li>
+                        <li><a href="https://www.axa.co.th/en/" target="_blank">安盛保险泰国</a></li>
+                        <li><a href="https://www.manulife.co.th/en/" target="_blank">宏利保险泰国</a></li>
+                        <li><a href="https://www.prudential.co.th/en/" target="_blank">保诚保险泰国</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.muangthai.co.th/en/" target="_blank">Muang Thai Life Assurance</a></li>
-                            <li><a href="https://www.thailife.com/en/" target="_blank">Thai Life Insurance</a></li>
-                            <li><a href="https://www.thaivivat.co.th/en/" target="_blank">Thai Vivat Insurance</a></li>
+                            <li><a href="https://www.muangthai.co.th/en/" target="_blank">曼谷人寿保险</a></li>
+                            <li><a href="https://www.thailife.com/en/" target="_blank">泰国人寿保险</a></li>
+                            <li><a href="https://www.thaivivat.co.th/en/" target="_blank">泰国大众保险</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Insurance</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多保险</button>
                     </ul>
                 </div>
             </div>
@@ -338,30 +353,30 @@
 
         <!-- Lifestyle 模块 -->
         <div id="lifestyle">
-            <h1 class="page-title">Lifestyle</h1>
+            <h1 class="page-title">生活方式</h1>
             
             <div class="category-grid">
                 <!-- 日常生活 -->
                 <div id="daily-life" class="category-card">
-                    <h2><i class="fas fa-home"></i>Daily Life</h2>
+                    <h2><i class="fas fa-home"></i>日常生活</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.central.co.th" target="_blank">Central Department Store</a></li>
-                        <li><a href="https://www.robinson.co.th" target="_blank">Robinson Department Store</a></li>
-                        <li><a href="https://www.themallgroup.com" target="_blank">The Mall Group</a></li>
-                        <li><a href="https://www.tops.co.th" target="_blank">Tops Market</a></li>
+                        <li><a href="https://www.central.co.th" target="_blank">中央百货</a></li>
+                        <li><a href="https://www.robinson.co.th" target="_blank">罗宾逊百货</a></li>
+                        <li><a href="https://www.themallgroup.com" target="_blank">The Mall集团</a></li>
+                        <li><a href="https://www.tops.co.th" target="_blank">Tops超市</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.bigc.co.th" target="_blank">Big C Supercenter</a></li>
+                            <li><a href="https://www.bigc.co.th" target="_blank">Big C超市</a></li>
                             <li><a href="https://www.tescolotus.com" target="_blank">Tesco Lotus</a></li>
-                            <li><a href="https://www.7eleven.co.th" target="_blank">7-Eleven</a></li>
-                            <li><a href="https://www.familymart.co.th" target="_blank">FamilyMart</a></li>
+                            <li><a href="https://www.7eleven.co.th" target="_blank">7-11便利店</a></li>
+                            <li><a href="https://www.familymart.co.th" target="_blank">全家便利店</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Places</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多场所</button>
                     </ul>
                 </div>
 
                 <!-- 外卖平台 -->
                 <div id="food-delivery" class="category-card">
-                    <h2><i class="fas fa-utensils"></i>Food Delivery Platforms</h2>
+                    <h2><i class="fas fa-utensils"></i>外卖平台</h2>
                     <ul class="link-list">
                         <li><a href="https://food.grab.com/th/" target="_blank">GrabFood</a></li>
                         <li><a href="https://www.foodpanda.co.th/" target="_blank">Foodpanda</a></li>
@@ -371,46 +386,46 @@
                             <li><a href="https://www.gojek.com/th/food/" target="_blank">GoFood</a></li>
                             <li><a href="https://www.skootar.com/" target="_blank">Skootar</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多平台</button>
                     </ul>
                 </div>
 
-                <!-- 交通 -->
+                <!-- 交通出行 -->
                 <div id="transportation" class="category-card">
-                    <h2><i class="fas fa-bus"></i>Transportation</h2>
+                    <h2><i class="fas fa-bus"></i>交通出行</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.mrta.co.th/" target="_blank">Bangkok Mass Transit Authority</a></li>
-                        <li><a href="https://www.bts.co.th/" target="_blank">BTS Skytrain</a></li>
-                        <li><a href="https://www.mrta.co.th/th/services/mrt-blue-line/" target="_blank">MRT Subway</a></li>
-                        <li><a href="https://www.srtet.co.th/index.php/en/" target="_blank">Airport Rail Link</a></li>
+                        <li><a href="https://www.mrta.co.th/" target="_blank">曼谷大众运输局</a></li>
+                        <li><a href="https://www.bts.co.th/" target="_blank">BTS轻轨</a></li>
+                        <li><a href="https://www.mrta.co.th/th/services/mrt-blue-line/" target="_blank">MRT地铁</a></li>
+                        <li><a href="https://www.srtet.co.th/index.php/en/" target="_blank">机场快线</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.bangkokbusclub.com/" target="_blank">Bangkok Bus Routes</a></li>
-                            <li><a href="https://www.grab.com/th/" target="_blank">Grab</a></li>
-                            <li><a href="https://bolt.eu/th/" target="_blank">Bolt</a></li>
+                            <li><a href="https://www.bangkokbusclub.com/" target="_blank">曼谷公交路线</a></li>
+                            <li><a href="https://www.grab.com/th/" target="_blank">Grab打车</a></li>
+                            <li><a href="https://bolt.eu/th/" target="_blank">Bolt打车</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Options</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多选项</button>
                     </ul>
                 </div>
 
                 <!-- 演出展览 -->
                 <div id="shows-exhibitions" class="category-card">
-                    <h2><i class="fas fa-theater-masks"></i>Shows & Exhibitions</h2>
+                    <h2><i class="fas fa-theater-masks"></i>演出展览</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.qsncc.com/" target="_blank">Queen Sirikit National Convention Center</a></li>
-                        <li><a href="https://impact.co.th/" target="_blank">IMPACT Exhibition Center</a></li>
-                        <li><a href="https://www.bacc.or.th/" target="_blank">Bangkok Art and Culture Centre</a></li>
-                        <li><a href="https://www.mocabangkok.com/" target="_blank">Museum of Contemporary Art</a></li>
+                        <li><a href="https://www.qsncc.com/" target="_blank">诗丽吉王后国家会议中心</a></li>
+                        <li><a href="https://impact.co.th/" target="_blank">IMPACT会展中心</a></li>
+                        <li><a href="https://www.bacc.or.th/" target="_blank">曼谷艺术文化中心</a></li>
+                        <li><a href="https://www.mocabangkok.com/" target="_blank">当代艺术博物馆</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.thailandticketmaster.com/" target="_blank">Ticket Master Thailand</a></li>
-                            <li><a href="https://www.thaiticketmajor.com/" target="_blank">Thai Ticket Major</a></li>
+                            <li><a href="https://www.thailandticketmaster.com/" target="_blank">泰国票务大师</a></li>
+                            <li><a href="https://www.thaiticketmajor.com/" target="_blank">泰国票务</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Events</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多活动</button>
                     </ul>
                 </div>
 
-                <!-- 电影院 -->
+                <!-- 电影影院 -->
                 <div id="movies-cinemas" class="category-card">
-                    <h2><i class="fas fa-film"></i>Movies & Cinemas</h2>
+                    <h2><i class="fas fa-film"></i>电影影院</h2>
                     <ul class="link-list">
                         <li><a href="https://www.majorcineplex.com/" target="_blank">Major Cineplex</a></li>
                         <li><a href="https://www.sfcinema.com/" target="_blank">SF Cinema City</a></li>
@@ -420,49 +435,49 @@
                             <li><a href="https://www.emquartier.co.th/en/entertainment/emp-cinema/" target="_blank">EMP Cinema</a></li>
                             <li><a href="https://www.iconsiam.com/en/iconic-stores/true-icon-hall" target="_blank">True ICON Hall</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Cinemas</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多影院</button>
                     </ul>
                 </div>
 
                 <!-- 媒体新闻 -->
                 <div id="media-news" class="category-card">
-                    <h2><i class="fas fa-newspaper"></i>Media & News</h2>
+                    <h2><i class="fas fa-newspaper"></i>媒体新闻</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.bangkokpost.com/" target="_blank">Bangkok Post</a></li>
-                        <li><a href="https://www.nationthailand.com/" target="_blank">The Nation Thailand</a></li>
-                        <li><a href="https://www.thaipbs.or.th/" target="_blank">Thai PBS</a></li>
-                        <li><a href="https://www.workpointtoday.com/" target="_blank">Workpoint TV</a></li>
+                        <li><a href="https://www.bangkokpost.com/" target="_blank">曼谷邮报</a></li>
+                        <li><a href="https://www.nationthailand.com/" target="_blank">泰国民族报</a></li>
+                        <li><a href="https://www.thaipbs.or.th/" target="_blank">泰国公共电视台</a></li>
+                        <li><a href="https://www.workpointtoday.com/" target="_blank">Workpoint电视台</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.khaosodenglish.com/" target="_blank">Khaosod English</a></li>
-                            <li><a href="https://thethaiger.com/" target="_blank">The Thaiger</a></li>
+                            <li><a href="https://www.khaosodenglish.com/" target="_blank">考索英文报</a></li>
+                            <li><a href="https://thethaiger.com/" target="_blank">泰国人报</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Media</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多媒体</button>
                     </ul>
                 </div>
 
                 <!-- 旅游观光 -->
                 <div id="travel-tourism" class="category-card">
-                    <h2><i class="fas fa-plane"></i>Travel & Tourism</h2>
+                    <h2><i class="fas fa-plane"></i>旅游观光</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.tourismthailand.org/" target="_blank">Tourism Authority of Thailand</a></li>
+                        <li><a href="https://www.tourismthailand.org/" target="_blank">泰国旅游局</a></li>
                         <li><a href="https://www.agoda.com/" target="_blank">Agoda</a></li>
                         <li><a href="https://www.booking.com/" target="_blank">Booking.com</a></li>
                         <li><a href="https://www.trip.com/" target="_blank">Trip.com</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.expedia.co.th/" target="_blank">Expedia Thailand</a></li>
+                            <li><a href="https://www.expedia.co.th/" target="_blank">Expedia泰国</a></li>
                             <li><a href="https://www.klook.com/" target="_blank">Klook</a></li>
                             <li><a href="https://www.tripadvisor.com/" target="_blank">TripAdvisor</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多平台</button>
                     </ul>
                 </div>
 
                 <!-- 健身运动 -->
                 <div id="fitness-sports" class="category-card">
-                    <h2><i class="fas fa-dumbbell"></i>Fitness & Sports</h2>
+                    <h2><i class="fas fa-dumbbell"></i>健身运动</h2>
                     <ul class="link-list">
                         <!-- 连锁健身房 -->
-                        <li><strong>Fitness Chains</strong></li>
+                        <li><strong>连锁健身房</strong></li>
                         <li><a href="https://www.fitnessfirst.co.th" target="_blank">Fitness First</a></li>
                         <li><a href="https://www.virginactive.co.th" target="_blank">Virgin Active</a></li>
                         <li><a href="https://www.anytimefitness.co.th" target="_blank">Anytime Fitness</a></li>
@@ -470,66 +485,66 @@
                             <li><a href="https://www.jetts.co.th" target="_blank">Jetts Fitness</a></li>
                             <li><a href="https://www.wearefitness.co.th" target="_blank">We Fitness</a></li>
                             <!-- 泰拳馆 -->
-                            <li><strong>Muay Thai Gyms</strong></li>
-                            <li><a href="https://www.yokkao.com" target="_blank">YOKKAO Training Center</a></li>
-                            <li><a href="https://96penang.com" target="_blank">96 Penang Muay Thai</a></li>
-                            <li><a href="https://www.pksenghigym.com" target="_blank">PK Sengh Muay Thai</a></li>
-                            <li><a href="https://www.rsgthailand.com" target="_blank">RSG Thailand</a></li>
+                            <li><strong>泰拳馆</strong></li>
+                            <li><a href="https://www.yokkao.com" target="_blank">YOKKAO训练中心</a></li>
+                            <li><a href="https://96penang.com" target="_blank">96 Penang泰拳馆</a></li>
+                            <li><a href="https://www.pksenghigym.com" target="_blank">PK Sengh泰拳馆</a></li>
+                            <li><a href="https://www.rsgthailand.com" target="_blank">RSG泰国</a></li>
                             <!-- 运动馆 -->
-                            <li><strong>Sports Centers</strong></li>
-                            <li><a href="https://www.sportsclubbangkok.com" target="_blank">Sports Club Bangkok</a></li>
-                            <li><a href="https://www.racquetclub.co.th" target="_blank">The Racquet Club</a></li>
-                            <li><a href="https://www.thaicc.org" target="_blank">The Royal Bangkok Sports Club</a></li>
+                            <li><strong>运动中心</strong></li>
+                            <li><a href="https://www.sportsclubbangkok.com" target="_blank">曼谷运动俱乐部</a></li>
+                            <li><a href="https://www.racquetclub.co.th" target="_blank">网球俱乐部</a></li>
+                            <li><a href="https://www.thaicc.org" target="_blank">皇家曼谷运动俱乐部</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Venues</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多场所</button>
                     </ul>
                 </div>
 
                 <!-- 泰国著名活动 -->
                 <div id="famous-events" class="category-card">
-                    <h2><i class="fas fa-calendar-alt"></i>Famous Events</h2>
+                    <h2><i class="fas fa-calendar-alt"></i>著名活动</h2>
                     <ul class="link-list">
                         <!-- 音乐节 -->
-                        <li><strong>Music Festivals</strong></li>
-                        <li><a href="https://www.wonderfruitfestival.com" target="_blank">Wonderfruit Festival (December)</a></li>
-                        <li><a href="https://www.s2ofestival.com" target="_blank">S2O Songkran Music Festival (April)</a></li>
-                        <li><a href="https://www.mayamusic.com" target="_blank">Maya Music Festival (December)</a></li>
+                        <li><strong>音乐节</strong></li>
+                        <li><a href="https://www.wonderfruitfestival.com" target="_blank">Wonderfruit音乐节 (12月)</a></li>
+                        <li><a href="https://www.s2ofestival.com" target="_blank">S2O宋干音乐节 (4月)</a></li>
+                        <li><a href="https://www.mayamusic.com" target="_blank">Maya音乐节 (12月)</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.bigmountainmusicfestival.com" target="_blank">Big Mountain Music Festival (December)</a></li>
-                            <li><a href="https://www.kolour.asia" target="_blank">Kolour in the Park (March)</a></li>
-                            <li><a href="https://www.togetherfestival.com" target="_blank">Together Festival (May)</a></li>
+                            <li><a href="https://www.bigmountainmusicfestival.com" target="_blank">大山音乐节 (12月)</a></li>
+                            <li><a href="https://www.kolour.asia" target="_blank">Kolour公园音乐节 (3月)</a></li>
+                            <li><a href="https://www.togetherfestival.com" target="_blank">Together音乐节 (5月)</a></li>
                             
                             <!-- 沙滩派对 -->
-                            <li><strong>Beach Parties</strong></li>
-                            <li><a href="https://fullmoonparty-thailand.com" target="_blank">Full Moon Party Koh Phangan (Monthly)</a></li>
-                            <li><a href="https://www.halfmoonpartythailand.com" target="_blank">Half Moon Festival (Bi-weekly)</a></li>
-                            <li><a href="https://www.blackmoonculture.com" target="_blank">Black Moon Culture (Monthly)</a></li>
+                            <li><strong>沙滩派对</strong></li>
+                            <li><a href="https://fullmoonparty-thailand.com" target="_blank">帕岸岛满月派对 (每月)</a></li>
+                            <li><a href="https://www.halfmoonpartythailand.com" target="_blank">半月派对 (每两周)</a></li>
+                            <li><a href="https://www.blackmoonculture.com" target="_blank">黑月派对 (每月)</a></li>
                             
                             <!-- 文化节日 -->
-                            <li><strong>Cultural Festivals</strong></li>
-                            <li><a href="https://www.tourismthailand.org/Events/songkran" target="_blank">Songkran Festival (13-15 April)</a></li>
-                            <li><a href="https://www.tourismthailand.org/Events/loy-krathong" target="_blank">Loy Krathong Festival (November)</a></li>
-                            <li><a href="https://www.tourismthailand.org/Events/chinese-new-year" target="_blank">Chinese New Year Festival (January/February)</a></li>
+                            <li><strong>文化节日</strong></li>
+                            <li><a href="https://www.tourismthailand.org/Events/songkran" target="_blank">宋干节 (4月13-15日)</a></li>
+                            <li><a href="https://www.tourismthailand.org/Events/loy-krathong" target="_blank">水灯节 (11月)</a></li>
+                            <li><a href="https://www.tourismthailand.org/Events/chinese-new-year" target="_blank">中国春节 (1月/2月)</a></li>
                             
                             <!-- 多元文化活动 -->
-                            <li><strong>Pride & Cultural Events</strong></li>
-                            <li><a href="https://www.bangkokpride.org" target="_blank">Bangkok Pride (June)</a></li>
-                            <li><a href="https://www.phuketpride.org" target="_blank">Phuket Pride (April)</a></li>
-                            <li><a href="https://www.chiangmaipride.com" target="_blank">Chiang Mai Pride (February)</a></li>
+                            <li><strong>多元文化活动</strong></li>
+                            <li><a href="https://www.bangkokpride.org" target="_blank">曼谷骄傲节 (6月)</a></li>
+                            <li><a href="https://www.phuketpride.org" target="_blank">普吉岛骄傲节 (4月)</a></li>
+                            <li><a href="https://www.chiangmaipride.com" target="_blank">清迈骄傲节 (2月)</a></li>
                             
                             <!-- 艺术节 -->
-                            <li><strong>Art Festivals</strong></li>
-                            <li><a href="https://www.bkkartbiennale.com" target="_blank">Bangkok Art Biennale (October-February)</a></li>
-                            <li><a href="https://www.bangkokedge.com" target="_blank">Bangkok Edge Festival (November)</a></li>
-                            <li><a href="https://www.ghostfestival.com" target="_blank">Ghost Festival (July)</a></li>
+                            <li><strong>艺术节</strong></li>
+                            <li><a href="https://www.bkkartbiennale.com" target="_blank">曼谷双年展 (10月-2月)</a></li>
+                            <li><a href="https://www.bangkokedge.com" target="_blank">曼谷边缘艺术节 (11月)</a></li>
+                            <li><a href="https://www.ghostfestival.com" target="_blank">鬼节 (7月)</a></li>
                             
                             <!-- 美食节 -->
-                            <li><strong>Food Festivals</strong></li>
-                            <li><a href="https://www.bangkokgourmetfestival.com" target="_blank">Bangkok Gourmet Festival (September)</a></li>
-                            <li><a href="https://www.centralfoodhall.com/thaifoodfestival" target="_blank">Thai Food Festival (July-August)</a></li>
-                            <li><a href="https://www.michelin.co.th/en/bangkok-selection" target="_blank">Bangkok Michelin Star Revelation (December)</a></li>
+                            <li><strong>美食节</strong></li>
+                            <li><a href="https://www.bangkokgourmetfestival.com" target="_blank">曼谷美食节 (9月)</a></li>
+                            <li><a href="https://www.centralfoodhall.com/thaifoodfestival" target="_blank">泰国美食节 (7月-8月)</a></li>
+                            <li><a href="https://www.michelin.co.th/en/bangkok-selection" target="_blank">曼谷米其林指南发布 (12月)</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Events</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多活动</button>
                     </ul>
                 </div>
             </div>
@@ -537,12 +552,12 @@
 
         <!-- Work & Jobs Section -->
         <div id="work-jobs">
-            <h1 class="page-title">Work & Jobs</h1>
+            <h1 class="page-title">工作与就业</h1>
             
             <div class="category-grid">
                 <!-- Recruitment Platforms Card -->
                 <div class="category-card">
-                    <h2><i class="fas fa-briefcase"></i>Recruitment Platforms</h2>
+                    <h2><i class="fas fa-briefcase"></i>招聘平台</h2>
                     <ul class="link-list">
                         <li><a href="https://th.jobsdb.com" target="_blank">JobsDB</a></li>
                         <li><a href="https://www.jobthai.com" target="_blank">JobThai</a></li>
@@ -556,13 +571,13 @@
                             <li><a href="https://www.michaelpage.co.th" target="_blank">Michael Page</a></li>
                             <li><a href="https://www.hays.co.th" target="_blank">Hays</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多平台</button>
                     </ul>
                 </div>
 
                 <!-- Freelance Platforms Card -->
                 <div class="category-card">
-                    <h2><i class="fas fa-laptop"></i>Freelance Platforms</h2>
+                    <h2><i class="fas fa-laptop"></i>自由职业平台</h2>
                     <ul class="link-list">
                         <li><a href="https://www.freelancer.com" target="_blank">Freelancer</a></li>
                         <li><a href="https://www.upwork.com" target="_blank">Upwork</a></li>
@@ -572,25 +587,25 @@
                             <li><a href="https://www.peopleperhour.com" target="_blank">PeoplePerHour</a></li>
                             <li><a href="https://www.toptal.com" target="_blank">Toptal</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多平台</button>
                     </ul>
                 </div>
 
                 <!-- Experience Sharing Forum Card -->
                 <div id="experience-sharing" class="category-card">
-                    <h2><i class="fas fa-comments"></i>Experience Sharing Forum</h2>
+                    <h2><i class="fas fa-comments"></i>经验分享论坛</h2>
                     <ul class="link-list">
-                        <li><a href="#" target="_blank">Coming Soon</a></li>
-                        <li><a href="#" target="_blank">Share Your Experience</a></li>
-                        <li><a href="#" target="_blank">Success Stories</a></li>
-                        <li><a href="#" target="_blank">Career Tips</a></li>
+                        <li><a href="#" target="_blank">即将推出</a></li>
+                        <li><a href="#" target="_blank">分享您的经验</a></li>
+                        <li><a href="#" target="_blank">成功故事</a></li>
+                        <li><a href="#" target="_blank">职业建议</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="#" target="_blank">Industry Insights</a></li>
-                            <li><a href="#" target="_blank">Interview Tips</a></li>
-                            <li><a href="#" target="_blank">Workplace Culture</a></li>
-                            <li><a href="#" target="_blank">Salary Discussions</a></li>
+                            <li><a href="#" target="_blank">行业洞察</a></li>
+                            <li><a href="#" target="_blank">面试技巧</a></li>
+                            <li><a href="#" target="_blank">职场文化</a></li>
+                            <li><a href="#" target="_blank">薪资讨论</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Topics</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多话题</button>
                     </ul>
                 </div>
             </div>
@@ -598,141 +613,141 @@
 
         <!-- Business Section -->
         <div id="business">
-            <h1 class="page-title">Business</h1>
+            <h1 class="page-title">商业</h1>
             
             <div class="category-grid">
                 <!-- Company Registration Guide -->
                 <div id="company-registration" class="category-card">
-                    <h2><i class="fas fa-file-alt"></i>Company Registration Guide</h2>
+                    <h2><i class="fas fa-file-alt"></i>公司注册指南</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.boi.go.th/" target="_blank">BOI Policy Guide</a></li>
-                        <li><a href="https://www.dbd.go.th/" target="_blank">Department of Business Development</a></li>
-                        <li><a href="https://www.bakermckenzie.com/en/locations/asia-pacific/thailand" target="_blank">Baker McKenzie Thailand</a></li>
-                        <li><a href="https://www.tilleke.com/" target="_blank">Tilleke & Gibbins</a></li>
+                        <li><a href="https://www.boi.go.th/" target="_blank">BOI政策指南</a></li>
+                        <li><a href="https://www.dbd.go.th/" target="_blank">商业发展部</a></li>
+                        <li><a href="https://www.bakermckenzie.com/en/locations/asia-pacific/thailand" target="_blank">贝克·麦坚时泰国</a></li>
+                        <li><a href="https://www.tilleke.com/" target="_blank">德恒律师事务所</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.allenovery.com/en-gb/global/offices/bangkok" target="_blank">Allen & Overy Thailand</a></li>
-                            <li><a href="https://www.herbertsmithfreehills.com/where-we-work/bangkok" target="_blank">Herbert Smith Freehills Thailand</a></li>
-                            <li><a href="https://www.nortonrosefulbright.com/en/locations/bangkok" target="_blank">Nexia Thailand</a></li>
-                            <li><a href="https://www.dentons.com/en/global-presence/thailand" target="_blank">Dentons Thailand</a></li>
-                            <li><a href="https://www.kwm.com/locations/bangkok/" target="_blank">King & Wood Mallesons Thailand</a></li>
-                            <li><a href="https://www.amt-law.com/en/offices/bangkok" target="_blank">Anderson Mori & Tomotsune Thailand</a></li>
-                            <li><a href="https://www.nishimura.com/en/locations/bangkok" target="_blank">Nishimura & Asahi Thailand</a></li>
-                            <li><a href="https://www.epam.com/" target="_blank">EPAM Systems Thailand</a></li>
-                            <li><a href="https://www.lw.com/en/offices/bangkok" target="_blank">Laxofit Thailand</a></li>
+                            <li><a href="https://www.allenovery.com/en-gb/global/offices/bangkok" target="_blank">安理国际律师事务所泰国</a></li>
+                            <li><a href="https://www.herbertsmithfreehills.com/where-we-work/bangkok" target="_blank">史密夫斐尔律师事务所泰国</a></li>
+                            <li><a href="https://www.nortonrosefulbright.com/en/locations/bangkok" target="_blank">诺顿罗氏律师事务所泰国</a></li>
+                            <li><a href="https://www.dentons.com/en/global-presence/thailand" target="_blank">大成律师事务所泰国</a></li>
+                            <li><a href="https://www.kwm.com/locations/bangkok/" target="_blank">金杜律师事务所泰国</a></li>
+                            <li><a href="https://www.amt-law.com/en/offices/bangkok" target="_blank">安德森·毛利·友松律师事务所泰国</a></li>
+                            <li><a href="https://www.nishimura.com/en/locations/bangkok" target="_blank">西村朝日律师事务所泰国</a></li>
+                            <li><a href="https://www.epam.com/" target="_blank">EPAM Systems泰国</a></li>
+                            <li><a href="https://www.lw.com/en/offices/bangkok" target="_blank">莱克斯律师事务所泰国</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Services</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多服务</button>
                     </ul>
                 </div>
 
                 <!-- Tax & Accounting Services -->
                 <div id="tax-accounting" class="category-card">
-                    <h2><i class="fas fa-coins"></i>Tax & Accounting Services</h2>
+                    <h2><i class="fas fa-coins"></i>税务与会计</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.audit.go.th/" target="_blank">Office of the Auditor General of Thailand</a></li>
-                        <li><a href="https://www.rd.go.th/english/" target="_blank">Revenue Department of Thailand</a></li>
-                        <li><a href="https://www.pwc.com/th/en.html" target="_blank">PwC Thailand</a></li>
-                        <li><a href="https://www2.deloitte.com/th/en.html" target="_blank">Deloitte Thailand</a></li>
+                        <li><a href="https://www.audit.go.th/" target="_blank">审计总署</a></li>
+                        <li><a href="https://www.rd.go.th/english/" target="_blank">泰国税收部</a></li>
+                        <li><a href="https://www.pwc.com/th/en.html" target="_blank">普华永道泰国</a></li>
+                        <li><a href="https://www2.deloitte.com/th/en.html" target="_blank">德勤泰国</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.ey.com/en_th" target="_blank">EY Thailand</a></li>
-                            <li><a href="https://home.kpmg/th/en/home.html" target="_blank">KPMG Thailand</a></li>
-                            <li><a href="https://www.grantthornton.co.th/" target="_blank">Grant Thornton Thailand</a></li>
-                            <li><a href="https://www.bdo.co.th/" target="_blank">BDO Thailand</a></li>
-                            <li><a href="https://www.mazars.co.th/" target="_blank">Mazars Thailand</a></li>
-                            <li><a href="https://www.nexia.com/thailand/" target="_blank">Nexia Thailand</a></li>
-                            <li><a href="https://www.bakermckenzie.com/en/locations/asia-pacific/thailand" target="_blank">Baker McKenzie Thailand</a></li>
-                            <li><a href="https://www.tilleke.com/" target="_blank">Tilleke & Gibbins</a></li>
+                            <li><a href="https://www.ey.com/en_th" target="_blank">安永泰国</a></li>
+                            <li><a href="https://home.kpmg/th/en/home.html" target="_blank">毕马威泰国</a></li>
+                            <li><a href="https://www.grantthornton.co.th/" target="_blank">安永泰国</a></li>
+                            <li><a href="https://www.bdo.co.th/" target="_blank">BDO泰国</a></li>
+                            <li><a href="https://www.mazars.co.th/" target="_blank">马扎尔泰国</a></li>
+                            <li><a href="https://www.nexia.com/thailand/" target="_blank">Nexia泰国</a></li>
+                            <li><a href="https://www.bakermckenzie.com/en/locations/asia-pacific/thailand" target="_blank">贝克·麦坚时泰国</a></li>
+                            <li><a href="https://www.tilleke.com/" target="_blank">德恒律师事务所</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Services</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多服务</button>
                     </ul>
                 </div>
 
                 <!-- Networking Platforms -->
                 <div id="networking" class="category-card">
-                    <h2><i class="fas fa-handshake"></i>Networking Platforms</h2>
+                    <h2><i class="fas fa-handshake"></i>商务社交</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.thaichamber.org/" target="_blank">Thai Chamber of Commerce</a></li>
-                        <li><a href="https://www.amchamthailand.com/" target="_blank">American Chamber of Commerce Thailand</a></li>
-                        <li><a href="https://www.eabc-thailand.org/" target="_blank">European Association for Business and Commerce</a></li>
-                        <li><a href="https://www.jcc.or.th/" target="_blank">Japanese Chamber of Commerce Thailand</a></li>
+                        <li><a href="https://www.thaichamber.org/" target="_blank">泰国商会</a></li>
+                        <li><a href="https://www.amchamthailand.com/" target="_blank">美国商会泰国</a></li>
+                        <li><a href="https://www.eabc-thailand.org/" target="_blank">欧洲商业与商业协会</a></li>
+                        <li><a href="https://www.jcc.or.th/" target="_blank">日本商会泰国</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://austchamthailand.com/" target="_blank">Australian-Thai Chamber of Commerce</a></li>
-                            <li><a href="https://www.bcct.or.th/" target="_blank">British Chamber of Commerce Thailand</a></li>
-                            <li><a href="https://www.chinaenterprises.or.th/" target="_blank">Chinese Enterprise Association Thailand</a></li>
-                            <li><a href="https://www.korchamthai.com/" target="_blank">Korean-Thai Chamber of Commerce</a></li>
+                            <li><a href="https://austchamthailand.com/" target="_blank">澳大利亚-泰国商会</a></li>
+                            <li><a href="https://www.bcct.or.th/" target="_blank">英国商会泰国</a></li>
+                            <li><a href="https://www.chinaenterprises.or.th/" target="_blank">中国企业协会泰国</a></li>
+                            <li><a href="https://www.korchamthai.com/" target="_blank">韩国-泰国商会</a></li>
                             <li><a href="https://www.techsauce.co/" target="_blank">Techsauce</a></li>
                             <li><a href="https://www.startupthailand.org/" target="_blank">Startup Thailand</a></li>
-                            <li><a href="https://www.nia.or.th/" target="_blank">National Innovation Agency</a></li>
-                            <li><a href="https://www.depa.or.th/en" target="_blank">Digital Economy Promotion Agency</a></li>
+                            <li><a href="https://www.nia.or.th/" target="_blank">国家创新局</a></li>
+                            <li><a href="https://www.depa.or.th/en" target="_blank">数字经济促进局</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Organizations</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多组织</button>
                     </ul>
                 </div>
 
                 <!-- Payment & Receipt Tools -->
                 <div id="payment-tools" class="category-card">
-                    <h2><i class="fas fa-credit-card"></i>Payment & Receipt Tools</h2>
+                    <h2><i class="fas fa-credit-card"></i>支付工具</h2>
                     <ul class="link-list">
                         <!-- 电子钱包 -->
-                        <li><strong>E-Wallets</strong></li>
+                        <li><strong>电子钱包</strong></li>
                         <li><a href="https://www.truemoney.com/wallet" target="_blank">TrueMoney Wallet</a></li>
                         <li><a href="https://www.rabbit.co.th/linepay" target="_blank">Rabbit LINE Pay</a></li>
                         <li><a href="https://www.shopeepay.co.th" target="_blank">ShopeePay</a></li>
                         <div class="expandable-content" style="display: none;">
                             <!-- 国际支付工具 -->
-                            <li><strong>International Payment</strong></li>
-                            <li><a href="https://wise.com" target="_blank">Wise (International Transfer)</a></li>
-                            <li><a href="https://www.paypal.com/th" target="_blank">PayPal Thailand</a></li>
-                            <li><a href="https://www.westernunion.com/th/en/home.html" target="_blank">Western Union Thailand</a></li>
+                            <li><strong>国际支付</strong></li>
+                            <li><a href="https://wise.com" target="_blank">Wise (国际转账)</a></li>
+                            <li><a href="https://www.paypal.com/th" target="_blank">PayPal泰国</a></li>
+                            <li><a href="https://www.westernunion.com/th/en/home.html" target="_blank">西方联盟泰国</a></li>
                             
                             <!-- 二维码支付 -->
-                            <li><strong>QR Payment</strong></li>
-                            <li><a href="https://www.bot.or.th/Thai/PaymentSystems/StandardPS/Pages/default.aspx" target="_blank">PromptPay (Thai QR Standard)</a></li>
-                            <li><a href="https://www.alipay.com/global" target="_blank">Alipay</a></li>
-                            <li><a href="https://www.wechat.com/en/pay.html" target="_blank">WeChat Pay</a></li>
+                            <li><strong>二维码支付</strong></li>
+                            <li><a href="https://www.bot.or.th/Thai/PaymentSystems/StandardPS/Pages/default.aspx" target="_blank">PromptPay (泰国二维码标准)</a></li>
+                            <li><a href="https://www.alipay.com/global" target="_blank">支付宝</a></li>
+                            <li><a href="https://www.wechat.com/en/pay.html" target="_blank">微信支付</a></li>
                             
                             <!-- POS系统 -->
-                            <li><strong>POS Systems</strong></li>
+                            <li><strong>POS系统</strong></li>
                             <li><a href="https://www.gbprimepay.com" target="_blank">GB Prime Pay</a></li>
-                            <li><a href="https://www.omise.co/th" target="_blank">Omise Payment</a></li>
-                            <li><a href="https://www.bangkokbank.com/en/Business-Banking/Other-Services/Payment-Solutions" target="_blank">Bangkok Bank EDC</a></li>
+                            <li><a href="https://www.omise.co/th" target="_blank">Omise支付</a></li>
+                            <li><a href="https://www.bangkokbank.com/en/Business-Banking/Other-Services/Payment-Solutions" target="_blank">曼谷银行EDC</a></li>
                             
                             <!-- 发票工具 -->
-                            <li><strong>Invoice & Receipt</strong></li>
-                            <li><a href="https://www.rd.go.th/2498.html" target="_blank">e-Tax Invoice & e-Receipt</a></li>
+                            <li><strong>发票和收据</strong></li>
+                            <li><a href="https://www.rd.go.th/2498.html" target="_blank">e-Tax发票和e-收据</a></li>
                             <li><a href="https://www.flowaccount.com" target="_blank">FlowAccount</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Tools</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多工具</button>
                     </ul>
                 </div>
 
                 <!-- E-commerce/Social Media Resources -->
                 <div id="ecommerce" class="category-card">
-                    <h2><i class="fas fa-shopping-bag"></i>E-commerce/Social Media Resources</h2>
+                    <h2><i class="fas fa-shopping-bag"></i>电子商务/社交媒体资源</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.lazada.co.th/" target="_blank">Lazada Thailand</a></li>
-                        <li><a href="https://shopee.co.th/" target="_blank">Shopee Thailand</a></li>
-                        <li><a href="https://www.tiktok.com/shop/" target="_blank">TikTok Shop Thailand</a></li>
+                        <li><a href="https://www.lazada.co.th/" target="_blank">Lazada泰国</a></li>
+                        <li><a href="https://shopee.co.th/" target="_blank">Shopee泰国</a></li>
+                        <li><a href="https://www.tiktok.com/shop/" target="_blank">TikTok Shop泰国</a></li>
                         <li><a href="https://www.jd.co.th/" target="_blank">JD Central</a></li>
                         <div class="expandable-content" style="display: none;">
                             <!-- B2B平台 -->
-                            <li><strong>B2B Platforms</strong></li>
-                            <li><a href="https://www.taimro.com/" target="_blank">TAIMRO (Industrial Procurement)</a></li>
+                            <li><strong>B2B平台</strong></li>
+                            <li><a href="https://www.taimro.com/" target="_blank">TAIMRO (工业采购)</a></li>
                             
-                            <!-- 电商平台 -->
-                            <li><strong>E-commerce Platforms</strong></li>
-                            <li><a href="https://www.amazon.co.th/" target="_blank">Amazon Thailand</a></li>
+                            <!-- 电子商务平台 -->
+                            <li><strong>电子商务平台</strong></li>
+                            <li><a href="https://www.amazon.co.th/" target="_blank">亚马逊泰国</a></li>
                             <li><a href="https://www.facebook.com/business/" target="_blank">Facebook Business</a></li>
                             <li><a href="https://business.instagram.com/" target="_blank">Instagram Business</a></li>
                             <li><a href="https://linebiz.com/th/" target="_blank">LINE Business</a></li>
                             
                             <!-- 物流服务 -->
-                            <li><strong>Logistics Services</strong></li>
+                            <li><strong>物流服务</strong></li>
                             <li><a href="https://www.flashexpress.co.th/" target="_blank">Flash Express</a></li>
                             <li><a href="https://th.kerryexpress.com/" target="_blank">Kerry Express</a></li>
-                            <li><a href="https://www.thailandpost.co.th/" target="_blank">Thailand Post</a></li>
+                            <li><a href="https://www.thailandpost.co.th/" target="_blank">泰国邮政</a></li>
                             <li><a href="https://www.scgexpress.co.th/" target="_blank">SCG Express</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Platforms</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多平台</button>
                     </ul>
                 </div>
             </div>
@@ -740,68 +755,68 @@
 
         <!-- Learning Section -->
         <div id="learning">
-            <h1 class="page-title">Learning</h1>
+            <h1 class="page-title">学习</h1>
             
             <div class="category-grid">
                 <!-- Thai Language Learning -->
                 <div id="thai-language" class="category-card">
-                    <h2><i class="fas fa-language"></i>Thai Language Learning</h2>
+                    <h2><i class="fas fa-language"></i>泰语学习</h2>
                     <ul class="link-list">
-                        <li><strong>University Programs</strong></li>
-                        <li><a href="https://www.arts.chula.ac.th/thai/" target="_blank">Chulalongkorn University Thai Program</a></li>
-                        <li><a href="https://lc.tu.ac.th/" target="_blank">Thammasat University Language Institute</a></li>
-                        <li><a href="https://www.langserv.ku.ac.th/" target="_blank">Kasetsart University Language Center</a></li>
+                        <li><strong>大学项目</strong></li>
+                        <li><a href="https://www.arts.chula.ac.th/thai/" target="_blank">朱拉隆功大学泰语项目</a></li>
+                        <li><a href="https://lc.tu.ac.th/" target="_blank">法政大学语言学院</a></li>
+                        <li><a href="https://www.langserv.ku.ac.th/" target="_blank">开塞特大学语言中心</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><strong>Private Language Schools</strong></li>
-                            <li><a href="https://www.duke-language.com/" target="_blank">Duke Language School</a></li>
+                            <li><strong>私人语言学校</strong></li>
+                            <li><a href="https://www.duke-language.com/" target="_blank">杜克语言学校</a></li>
                             <li><a href="https://www.prolanguage.co.th/" target="_blank">Pro Language</a></li>
                             <li><a href="https://www.union-thai.com/" target="_blank">Union Thai Language</a></li>
-                            <li><strong>Online Learning</strong></li>
-                            <li><a href="https://www.learnthaiwithmod.com/" target="_blank">Learn Thai with Mod</a></li>
+                            <li><strong>在线学习</strong></li>
+                            <li><a href="https://www.learnthaiwithmod.com/" target="_blank">学习泰语</a></li>
                             <li><a href="https://www.thaipod101.com/" target="_blank">ThaiPod101</a></li>
                             <li><a href="https://www.duolingo.com/" target="_blank">Duolingo Thai</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Resources</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多资源</button>
                     </ul>
                 </div>
 
                 <!-- Universities & International Schools -->
                 <div id="universities" class="category-card">
-                    <h2><i class="fas fa-university"></i>Universities & Schools</h2>
+                    <h2><i class="fas fa-university"></i>大学与学校</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.chula.ac.th/en/" target="_blank">Chulalongkorn University</a></li>
-                        <li><a href="https://www.mahidol.ac.th/en/" target="_blank">Mahidol University</a></li>
-                        <li><a href="https://www.tu.ac.th/en/" target="_blank">Thammasat University</a></li>
-                        <li><a href="https://www.ais.ac.th/" target="_blank">AIS International School</a></li>
+                        <li><a href="https://www.chula.ac.th/en/" target="_blank">朱拉隆功大学</a></li>
+                        <li><a href="https://www.mahidol.ac.th/en/" target="_blank">玛希隆大学</a></li>
+                        <li><a href="https://www.tu.ac.th/en/" target="_blank">法政大学</a></li>
+                        <li><a href="https://www.ais.ac.th/" target="_blank">AIS国际学校</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.kmutt.ac.th/en/" target="_blank">King Mongkut's University of Technology</a></li>
-                            <li><a href="https://www.au.edu/" target="_blank">Assumption University</a></li>
-                            <li><a href="https://www.stamford.edu/" target="_blank">Stamford International University</a></li>
-                            <li><a href="https://www.webster.ac.th/" target="_blank">Webster University Thailand</a></li>
-                            <li><a href="https://www.patana.ac.th/" target="_blank">Bangkok Patana School</a></li>
-                            <li><a href="https://www.shrewsbury.ac.th/" target="_blank">Shrewsbury International School</a></li>
+                            <li><a href="https://www.kmutt.ac.th/en/" target="_blank">国王科技大学</a></li>
+                            <li><a href="https://www.au.edu/" target="_blank">阿南达大学</a></li>
+                            <li><a href="https://www.stamford.edu/" target="_blank">斯坦福国际大学</a></li>
+                            <li><a href="https://www.webster.ac.th/" target="_blank">韦伯斯特大学泰国</a></li>
+                            <li><a href="https://www.patana.ac.th/" target="_blank">曼谷帕塔纳学校</a></li>
+                            <li><a href="https://www.shrewsbury.ac.th/" target="_blank">Shrewsbury国际学校</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Institutions</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多机构</button>
                     </ul>
                 </div>
 
                 <!-- Skill Development -->
                 <div id="skill-development" class="category-card">
-                    <h2><i class="fas fa-brain"></i>Skill Development</h2>
+                    <h2><i class="fas fa-brain"></i>技能发展</h2>
                     <ul class="link-list">
-                        <li><a href="https://www.dsd.go.th/en/" target="_blank">Department of Skill Development</a></li>
-                        <li><a href="https://www.nstda.or.th/en/" target="_blank">National Science and Technology Development Agency</a></li>
-                        <li><a href="https://www.depa.or.th/en" target="_blank">Digital Economy Promotion Agency</a></li>
-                        <li><a href="https://www.britishcouncil.or.th/" target="_blank">British Council Thailand</a></li>
+                        <li><a href="https://www.dsd.go.th/en/" target="_blank">技能发展部</a></li>
+                        <li><a href="https://www.nstda.or.th/en/" target="_blank">国家科学和技术发展局</a></li>
+                        <li><a href="https://www.depa.or.th/en" target="_blank">数字经济促进局</a></li>
+                        <li><a href="https://www.britishcouncil.or.th/" target="_blank">英国理事会泰国</a></li>
                         <div class="expandable-content" style="display: none;">
-                            <li><a href="https://www.goethe.de/ins/th/" target="_blank">Goethe-Institut Thailand</a></li>
+                            <li><a href="https://www.goethe.de/ins/th/" target="_blank">歌德学院泰国</a></li>
                             <li><a href="https://bangkok.thaifrench.org/en" target="_blank">Alliance Française Bangkok</a></li>
                             <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
                             <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
                             <li><a href="https://www.skillane.com/" target="_blank">Skillane</a></li>
                             <li><a href="https://www.wongnai.com/courses" target="_blank">Wongnai Academy</a></li>
                         </div>
-                        <button class="show-more-btn" onclick="toggleContent(this)">Show More Resources</button>
+                        <button class="show-more-btn" onclick="toggleContent(this)">显示更多资源</button>
                     </ul>
                 </div>
             </div>
@@ -809,7 +824,7 @@
 
         <!-- About Section -->
         <section id="about" class="about-section">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">关于</h2>
             <div class="category-grid">
                 <!-- About ThaiKit Card -->
                 <div class="category-card" id="about-thaikit">
@@ -876,12 +891,19 @@
 
     <!-- JavaScript -->
     <script>
+        // 语言切换函数
+        function changeLanguage(lang) {
+            const currentPath = window.location.pathname;
+            const newPath = currentPath.replace(/\/[a-z]{2}(-[a-z]{2})?\//, `/${lang}/`);
+            window.location.href = newPath;
+        }
+
         // 全局定义 toggleContent 函数
         function toggleContent(button) {
             const content = button.previousElementSibling;
             if (content.style.display === 'none') {
                 content.style.display = 'block';
-                button.textContent = 'Show Less';
+                button.textContent = '显示更少';
                 // 添加动画效果
                 setTimeout(() => {
                     content.querySelectorAll('li').forEach((li, index) => {
@@ -898,7 +920,7 @@
                 });
                 setTimeout(() => {
                     content.style.display = 'none';
-                    button.textContent = button.textContent.replace('Less', 'More');
+                    button.textContent = '显示更多';
                 }, 300);
             }
         }
