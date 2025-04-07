@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "services": "サービス",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "title": "当社のウェブサイトへようこそ",
+    "subtitle": "信頼できるビジネスパートナー"
+  }
+} 

@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "contact": "联系我们",
+    "essentials": "生活必备",
+    "lifestyle": "生活方式",
+    "work-jobs": "工作就业",
+    "business": "商业服务",
+    "learning": "学习资源",
+    "showMore": "显示更多",
+    "Visa Information": "签证信息",
+    "Phone Card/Broadband": "电话卡/宽带",
+    "House Rental Platform": "租房平台",
+    "Local Banks": "本地银行",
+    "Hospitals": "医院",
+    "Insurance Resources": "保险资源",
+    "Daily Life": "日常生活",
+    "Food Delivery": "外卖平台",
+    "Transportation": "交通出行",
+    "Shows & Exhibitions": "演出展览",
+    "Movies & Cinemas": "电影影院",
+    "Media & News": "媒体新闻",
+    "Travel & Tourism": "旅游观光",
+    "Fitness & Sports": "健身运动",
+    "Famous Events": "著名活动",
+    "Recruitment Platforms": "招聘平台",
+    "Freelance Platforms": "自由职业平台",
+    "Experience Sharing Forum": "经验分享论坛",
+    "Company Registration": "公司注册",
+    "Tax & Accounting": "税务会计",
+    "Networking": "商务社交",
+    "Payment Tools": "支付工具",
+    "E-commerce": "电子商务",
+    "Thai Language": "泰语学习",
+    "Universities": "大学学校",
+    "Skill Development": "技能发展"
+  },
+  "hero": {
+    "title": "欢迎来到我们的网站",
+    "subtitle": "我们提供专业的服务",
+    "cta": "了解更多"
+  },
+  "about": {
+    "title": "关于我们",
+    "description": "我们是一家专业的公司，致力于为客户提供最优质的服务。",
+    "welcome": "欢迎来到 ThaiKit - 您的泰国生活指南！",
+    "description": "ThaiKit 是一个专门为在泰国生活的外国人、数字游民、企业家和学生设计的资源中心。无论您是在申请签证、开设银行账户、寻找公寓、创业，还是仅仅在寻找最佳的手机套餐 - 我们都能为您提供帮助。"
+  },
+  "services": {
+    "title": "我们的服务",
+    "items": [
+      {
+        "title": "服务一",
+        "description": "服务一的详细描述"
+      },
+      {
+        "title": "服务二",
+        "description": "服务二的详细描述"
+      },
+      {
+        "title": "服务三",
+        "description": "服务三的详细描述"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我们",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "message": "留言",
+      "submit": "提交"
+    }
+  }
+} 

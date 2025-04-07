@@ -36,6 +36,25 @@
     <!-- 左侧导航栏 -->
     <nav class="sidebar">
         <a href="/" class="logo">ThaiKit</a>
+        
+        <!-- 语言切换器 -->
+        <div class="language-switcher">
+            <button class="language-btn" onclick="toggleLanguageMenu()">
+                <i class="fas fa-globe"></i>
+                <span>English</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="language-menu">
+                <a href="#" onclick="switchLanguage('English'); return false;">English</a>
+                <a href="#" onclick="switchLanguage('简体中文'); return false;">简体中文</a>
+                <a href="#" onclick="switchLanguage('繁體中文'); return false;">繁體中文</a>
+                <a href="#" onclick="switchLanguage('日本語'); return false;">日本語</a>
+                <a href="#" onclick="switchLanguage('Русский'); return false;">Русский</a>
+                <a href="#" onclick="switchLanguage('한국어'); return false;">한국어</a>
+                <a href="#" onclick="switchLanguage('ภาษาไทย'); return false;">ภาษาไทย</a>
+            </div>
+        </div>
+
         <ul class="nav-menu">
             <li class="nav-item">
                 <a href="#essentials" class="nav-link">
@@ -936,6 +955,622 @@
                 });
             });
         });
+
+        // 语言切换功能
+        function toggleLanguageMenu() {
+            const menu = document.querySelector('.language-menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // 关闭语言菜单
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.language-menu');
+            const btn = document.querySelector('.language-btn');
+            if (!menu.contains(event.target) && !btn.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+
+        // 获取语言代码
+        function getLangCode(langName) {
+            const langMap = {
+                'English': 'en',
+                '简体中文': 'zh',
+                '繁體中文': 'zh-TW',
+                '日本語': 'ja',
+                'Русский': 'ru',
+                '한국어': 'ko',
+                'ภาษาไทย': 'th'
+            };
+            return langMap[langName] || 'en';
+        }
+
+        // 翻译数据
+        const translations = {
+            'en': {
+                navigation: {
+                    'essentials': 'Essentials',
+                    'lifestyle': 'Lifestyle',
+                    'work-jobs': 'Work & Jobs',
+                    'business': 'Business',
+                    'learning': 'Learning',
+                    'about': 'About',
+                    'showMore': 'Show More',
+                    'Visa Information': 'Visa Information',
+                    'Phone Card/Broadband': 'Phone Card/Broadband',
+                    'House Rental Platform': 'House Rental Platform',
+                    'Local Banks': 'Local Banks',
+                    'Hospitals': 'Hospitals',
+                    'Insurance Resources': 'Insurance Resources'
+                },
+                about: {
+                    welcome: 'Welcome to ThaiKit - Your Ultimate Resource Hub for Thailand!',
+                    description: 'ThaiKit is a curated directory and resource hub designed specifically for expats, digital nomads, entrepreneurs, and students who are navigating life in Thailand.'
+                }
+            },
+            'zh': {
+                navigation: {
+                    'essentials': '生活必备',
+                    'lifestyle': '生活方式',
+                    'work-jobs': '工作就业',
+                    'business': '商业服务',
+                    'learning': '学习资源',
+                    'about': '关于我们',
+                    'showMore': '显示更多',
+                    'Show Less': '收起',
+                    'Show More Information': '显示更多信息',
+                    'Show More Services': '显示更多服务',
+                    'Show More Platforms': '显示更多平台',
+                    'Show More Events': '显示更多活动',
+                    'Show More Resources': '显示更多资源',
+                    'Show More Organizations': '显示更多组织',
+                    'Show More Tools': '显示更多工具',
+                    'Show More Topics': '显示更多主题',
+                    'Show More Venues': '显示更多场所',
+                    'Show More Institutions': '显示更多机构',
+
+                    // 导航和子菜单项
+                    'Visa Information': '签证信息',
+                    'Phone Card/Broadband': '电话卡/宽带',
+                    'House Rental Platform': '租房平台',
+                    'Local Banks': '本地银行',
+                    'Hospitals': '医院',
+                    'Insurance Resources': '保险资源',
+                    'Daily Life': '日常生活',
+                    'Food Delivery': '外卖平台',
+                    'Transportation': '交通出行',
+                    'Shows & Exhibitions': '演出展览',
+                    'Movies & Cinemas': '电影影院',
+                    'Media & News': '媒体新闻',
+                    'Travel & Tourism': '旅游观光',
+                    'Fitness & Sports': '健身运动',
+                    'Famous Events': '著名活动',
+                    'Recruitment Platforms': '招聘平台',
+                    'Freelance Platforms': '自由职业平台',
+                    'Experience Sharing Forum': '经验分享论坛',
+                    'Company Registration': '公司注册',
+                    'Tax & Accounting': '税务会计',
+                    'Networking': '商务社交',
+                    'Payment Tools': '支付工具',
+                    'E-commerce': '电子商务',
+                    'Thai Language': '泰语学习',
+                    'Universities': '大学学校',
+                    'Skill Development': '技能发展',
+
+                    // 子类别标题
+                    'University Programs': '大学课程',
+                    'Private Language Schools': '私立语言学校',
+                    'Online Learning': '在线学习',
+                    'Fitness Chains': '连锁健身房',
+                    'Muay Thai Gyms': '泰拳馆',
+                    'Sports Centers': '运动中心',
+                    'Music Festivals': '音乐节',
+                    'Beach Parties': '沙滩派对',
+                    'Cultural Festivals': '文化节日',
+                    'Pride & Cultural Events': '骄傲游行与文化活动',
+                    'Art Festivals': '艺术节',
+                    'Food Festivals': '美食节',
+                    'E-Wallets': '电子钱包',
+                    'International Payment': '国际支付',
+                    'QR Payment': '二维码支付',
+                    'POS Systems': 'POS系统',
+                    'Invoice & Receipt': '发票和收据',
+                    'B2B Platforms': 'B2B平台',
+                    'E-commerce Platforms': '电商平台',
+                    'Logistics Services': '物流服务',
+
+                    // 签证信息部分
+                    'Thai Immigration Bureau': '泰国移民局',
+                    'Thai Embassy Information': '泰国大使馆信息',
+                    'Thailand Elite Visa': '泰国精英签证',
+                    'BOI Smart Visa': 'BOI智能签证',
+                    'VFS Global Visa Center': 'VFS全球签证中心',
+                    'TLScontact Visa Center': 'TLS签证服务中心',
+
+                    // 电话卡/宽带部分
+                    'AIS Mobile & Fibre': 'AIS移动和光纤',
+                    'True Corporation': 'True电信公司',
+                    'DTAC Mobile': 'DTAC移动',
+                    'AIS Fibre Packages': 'AIS光纤套餐',
+                    '3BB Broadband': '3BB宽带',
+                    'True Online': 'True在线',
+                    'NT (Former TOT)': 'NT (原TOT)',
+                    'Jasper Mobile (Tourist SIM)': 'Jasper Mobile (旅游SIM卡)',
+                    'SIM THAI (Tourist SIM)': 'SIM THAI (旅游SIM卡)',
+
+                    // 租房平台部分
+                    'DDproperty': 'DD房产网',
+                    'Hipflat': 'Hipflat房产',
+                    'RentHub': '租房中心',
+                    'FazWaz': 'FazWaz房产',
+                    'Prakard': 'Prakard房产',
+                    'LivingInsider': '生活内参',
+                    'Thailand Property': '泰国房产',
+                    'Property Hub': '房产中心',
+
+                    // 银行部分
+                    'TMB Bank': 'TMB银行',
+                    'Krungthai Bank': '泰京银行',
+                    'Government Housing Bank': '政府住房银行',
+                    'ICBC Thailand': '工商银行（泰国）',
+                    'Citibank Thailand': '花旗银行（泰国）',
+
+                    // 医院部分
+                    'Ramkhamhaeng Hospital': '兰甘亨医院',
+                    'MedPark Hospital': 'MedPark医院',
+
+                    // 保险部分
+                    'AIA Thailand': '友邦保险（泰国）',
+                    'AXA Thailand': '安盛保险（泰国）',
+                    'Manulife Thailand': '宏利保险（泰国）',
+                    'Prudential Thailand': '保诚保险（泰国）',
+                    'Muang Thai Life Assurance': '泰国人寿保险',
+                    'Thai Life Insurance': '泰国人寿',
+                    'Thai Vivat Insurance': '泰华保险',
+
+                    // 日常生活部分
+                    'Central Department Store': '尚泰百货',
+                    'Robinson Department Store': '鲁宾逊百货',
+                    'The Mall Group': '购物中心集团',
+                    'Tops Market': 'Tops超市',
+                    'Big C Supercenter': 'Big C超市',
+                    'Tesco Lotus': '乐购莲花',
+                    '7-Eleven': '7-11便利店',
+                    'FamilyMart': '全家便利店',
+
+                    // 外卖平台部分
+                    'GrabFood': 'Grab外卖',
+                    'Foodpanda': '空腹熊猫',
+                    'LINE MAN': 'LINE MAN',
+                    'Robinhood': 'Robinhood',
+                    'GoFood': 'Go外卖',
+                    'Skootar': 'Skootar',
+
+                    // 交通部分
+                    'Bangkok Bus Routes': '曼谷公交线路',
+                    'Grab': 'Grab出行',
+                    'Bolt': 'Bolt出行',
+
+                    // 演出展览部分
+                    'Queen Sirikit National Convention Center': '诗丽吉王后会展中心',
+                    'IMPACT Exhibition Center': 'IMPACT展览中心',
+                    'Bangkok Art and Culture Centre': '曼谷艺术文化中心',
+                    'Museum of Contemporary Art': '当代艺术博物馆',
+                    'Ticket Master Thailand': '票务大师泰国',
+                    'Thai Ticket Major': '泰国主要票务',
+
+                    // 电影院部分
+                    'Major Cineplex': 'Major影院',
+                    'SF Cinema City': 'SF影城',
+                    'Paragon Cineplex': '暹罗影城',
+                    'Central Cinema': '尚泰影院',
+                    'EMP Cinema': 'EMP影院',
+                    'True ICON Hall': 'True ICON影厅',
+
+                    // 媒体新闻部分
+                    'Bangkok Post': '曼谷邮报',
+                    'The Nation Thailand': '泰国国家报',
+                    'Thai PBS': '泰国公共广播电视台',
+                    'Workpoint TV': 'Workpoint电视台',
+                    'Khaosod English': '考索英文新闻',
+                    'The Thaiger': 'The Thaiger新闻',
+
+                    // 旅游观光部分
+                    'Tourism Authority of Thailand': '泰国旅游局',
+                    'Agoda': 'Agoda订房网',
+                    'Booking.com': 'Booking预订网',
+                    'Trip.com': '携程旅行',
+                    'Expedia Thailand': 'Expedia泰国',
+                    'Klook': '客路旅行',
+                    'TripAdvisor': '猫途鹰',
+
+                    // 健身运动部分
+                    'Fitness First': 'Fitness First健身',
+                    'Virgin Active': 'Virgin Active健身',
+                    'Anytime Fitness': 'Anytime Fitness',
+                    'Jetts Fitness': 'Jetts健身',
+                    'We Fitness': 'We健身',
+                    'YOKKAO Training Center': 'YOKKAO泰拳训练中心',
+                    '96 Penang Muay Thai': '96槟城泰拳',
+                    'PK Sengh Muay Thai': 'PK Sengh泰拳',
+                    'RSG Thailand': 'RSG泰国',
+                    'Sports Club Bangkok': '曼谷体育俱乐部',
+                    'The Racquet Club': '球拍俱乐部',
+                    'The Royal Bangkok Sports Club': '曼谷皇家体育俱乐部',
+
+                    // 活动部分
+                    'Wonderfruit Festival (December)': 'Wonderfruit音乐节（12月）',
+                    'S2O Songkran Music Festival (April)': 'S2O泼水节音乐节（4月）',
+                    'Maya Music Festival (December)': 'Maya音乐节（12月）',
+                    'Big Mountain Music Festival (December)': '大山音乐节（12月）',
+                    'Kolour in the Park (March)': '公园彩色节（3月）',
+                    'Together Festival (May)': 'Together音乐节（5月）',
+                    'Full Moon Party Koh Phangan (Monthly)': '帕岸岛满月派对（每月）',
+                    'Half Moon Festival (Bi-weekly)': '半月派对（每两周）',
+                    'Black Moon Culture (Monthly)': '黑月文化派对（每月）',
+                    'Songkran Festival (13-15 April)': '泼水节（4月13-15日）',
+                    'Loy Krathong Festival (November)': '水灯节（11月）',
+                    'Chinese New Year Festival (January/February)': '春节庆典（1-2月）',
+                    'Bangkok Pride (June)': '曼谷骄傲游行（6月）',
+                    'Phuket Pride (April)': '普吉骄傲游行（4月）',
+                    'Chiang Mai Pride (February)': '清迈骄傲游行（2月）',
+                    'Bangkok Art Biennale (October-February)': '曼谷艺术双年展（10月-2月）',
+                    'Bangkok Edge Festival (November)': '曼谷前沿艺术节（11月）',
+                    'Ghost Festival (July)': '鬼节（7月）',
+                    'Bangkok Gourmet Festival (September)': '曼谷美食节（9月）',
+                    'Thai Food Festival (July-August)': '泰国美食节（7-8月）',
+                    'Bangkok Michelin Star Revelation (December)': '曼谷米其林星级揭晓（12月）',
+
+                    // 工作就业部分
+                    'JobsDB': 'JobsDB招聘网',
+                    'JobThai': '泰国招聘网',
+                    'JobTopGun': 'JobTopGun招聘',
+                    'JobStreet': 'JobStreet招聘',
+                    'Adecco': '德科人力资源',
+                    'Manpower': '万宝盛华',
+                    'Robert Walters': '华德士招聘',
+                    'Michael Page': '迈克尔佩奇招聘',
+                    'Hays': '翰德招聘',
+
+                    // 自由职业平台
+                    'Freelancer': 'Freelancer自由职业',
+                    'Upwork': 'Upwork在线工作',
+                    'Fiverr': 'Fiverr服务平台',
+                    'Guru': 'Guru自由职业',
+                    'PeoplePerHour': '按小时雇佣平台',
+                    'Toptal': 'Toptal精英网络',
+
+                    // 经验分享论坛
+                    'Coming Soon': '即将推出',
+                    'Share Your Experience': '分享您的经验',
+                    'Success Stories': '成功故事',
+                    'Career Tips': '职业建议',
+                    'Industry Insights': '行业洞察',
+                    'Interview Tips': '面试技巧',
+                    'Workplace Culture': '职场文化',
+                    'Salary Discussions': '薪资讨论',
+
+                    // 商业服务部分
+                    'BOI Policy Guide': 'BOI政策指南',
+                    'Department of Business Development': '商业发展部',
+                    'Baker McKenzie Thailand': '贝克·麦坚时（泰国）',
+                    'Tilleke & Gibbins': '帝力嘉宾律师事务所',
+                    'Office of the Auditor General of Thailand': '泰国审计长办公室',
+                    'Revenue Department of Thailand': '泰国税务局',
+                    'PwC Thailand': '普华永道（泰国）',
+                    'Deloitte Thailand': '德勤（泰国）',
+                    'EY Thailand': '安永（泰国）',
+                    'KPMG Thailand': '毕马威（泰国）',
+                    'Grant Thornton Thailand': '致同（泰国）',
+                    'BDO Thailand': '立信（泰国）',
+                    'Mazars Thailand': '玛泽（泰国）',
+
+                    // 学习资源部分
+                    'Chulalongkorn University Thai Program': '朱拉隆功大学泰语课程',
+                    'Thammasat University Language Institute': '法政大学语言学院',
+                    'Kasetsart University Language Center': '农业大学语言中心',
+                    'Duke Language School': 'Duke语言学校',
+                    'Pro Language': 'Pro语言学校',
+                    'Union Thai Language': 'Union泰语学校',
+                    'Learn Thai with Mod': 'Mod泰语教学',
+                    'ThaiPod101': '泰语教程101',
+                    'Duolingo Thai': '多邻国泰语',
+                    'Chulalongkorn University': '朱拉隆功大学',
+                    'Mahidol University': '玛希隆大学',
+                    'Thammasat University': '法政大学',
+                    'AIS International School': 'AIS国际学校',
+                    'King Mongkut\'s University of Technology': '蒙库特国王理工大学',
+                    'Assumption University': '易三仓大学',
+                    'Stamford International University': '斯坦福国际大学',
+                    'Webster University Thailand': '韦伯斯特大学（泰国）',
+                    'Bangkok Patana School': '曼谷八达娜学校',
+                    'Shrewsbury International School': '舒伯利国际学校',
+                    'Department of Skill Development': '技能发展部',
+                    'National Science and Technology Development Agency': '国家科技发展局',
+                    'Digital Economy Promotion Agency': '数字经济促进局',
+                    'British Council Thailand': '英国文化协会（泰国）',
+                    'Goethe-Institut Thailand': '歌德学院（泰国）',
+                    'Alliance Française Bangkok': '法语联盟（曼谷）',
+                    'Coursera': 'Coursera在线课程',
+                    'Udemy': 'Udemy在线学习',
+                    'Skillane': 'Skillane技能培训',
+                    'Wongnai Academy': 'Wongnai学院',
+                    cards: {
+                        // 外卖平台卡片
+                        'Food Delivery Platforms': {
+                            title: '外卖平台',
+                            description: '泰国主流外卖平台汇总，包括Grab、Foodpanda等热门应用，助您轻松解决用餐需求。',
+                            items: [
+                                'Grab外卖 - 东南亚最大外卖平台',
+                                '空腹熊猫 - 国际知名外卖服务',
+                                'LINE MAN - 本地流行外卖应用',
+                                'Robinhood - 泰国本土外卖平台',
+                                'GoFood - 新兴外卖服务商'
+                            ]
+                        },
+
+                        // 演出展览卡片
+                        'Shows & Exhibitions': {
+                            title: '演出展览',
+                            description: '泰国各类演出、展览及文化活动信息，涵盖音乐会、艺术展、文化表演等。',
+                            items: [
+                                '诗丽吉王后会展中心 - 大型展会首选',
+                                'IMPACT展览中心 - 综合展览场地',
+                                '曼谷艺术文化中心 - 艺术展览圣地',
+                                '当代艺术博物馆 - 现代艺术展示',
+                                '泰国票务中心 - 活动票务预订'
+                            ]
+                        },
+
+                        // 电影院卡片
+                        'Movies & Cinemas': {
+                            title: '电影院线',
+                            description: '泰国主要电影院线信息，包括影院位置、在线订票及最新影片资讯。',
+                            items: [
+                                'Major影院 - 泰国最大连锁影院',
+                                'SF影城 - 高端影院体验',
+                                '暹罗影城 - 豪华观影选择',
+                                '尚泰影院 - 购物中心影院',
+                                'True ICON影厅 - 精品观影体验'
+                            ]
+                        },
+
+                        // 媒体新闻卡片
+                        'Media & News': {
+                            title: '媒体新闻',
+                            description: '泰国主流媒体及新闻平台，提供最新资讯和本地新闻报道。',
+                            items: [
+                                '曼谷邮报 - 权威英文新闻',
+                                '泰国国家报 - 综合新闻媒体',
+                                '泰国公共广播电视台 - 官方媒体',
+                                'Workpoint电视台 - 娱乐新闻',
+                                '考索英文新闻 - 时事报道'
+                            ]
+                        },
+
+                        // 旅游观光卡片
+                        'Travel & Tourism': {
+                            title: '旅游观光',
+                            description: '泰国旅游资源整合，包括景点推荐、住宿预订和旅游服务等信息。',
+                            items: [
+                                '泰国旅游局 - 官方旅游信息',
+                                'Agoda订房网 - 酒店预订平台',
+                                '携程旅行 - 中文旅游服务',
+                                '客路旅行 - 当地游玩体验',
+                                '猫途鹰 - 旅游攻略点评'
+                            ]
+                        },
+
+                        // 健身运动卡片
+                        'Fitness & Sports': {
+                            title: '健身运动',
+                            description: '泰国健身房、运动场所及体育活动信息汇总。',
+                            items: [
+                                'Fitness First - 连锁健身房',
+                                'Virgin Active - 高端健身会所',
+                                'YOKKAO泰拳 - 专业泰拳训练',
+                                '曼谷体育俱乐部 - 综合运动场所',
+                                '曼谷皇家体育俱乐部 - 顶级运动设施'
+                            ]
+                        },
+
+                        // 商业服务卡片
+                        'Business Services': {
+                            title: '商业服务',
+                            description: '泰国商务服务资源，包括公司注册、法律咨询、会计服务等。',
+                            items: [
+                                'BOI投资委员会 - 投资政策指导',
+                                '商业发展部 - 企业注册服务',
+                                '普华永道 - 专业审计咨询',
+                                '德勤 - 商业咨询服务',
+                                '贝克·麦坚时 - 法律服务'
+                            ]
+                        },
+
+                        // 学习资源卡片
+                        'Learning Resources': {
+                            title: '学习资源',
+                            description: '泰国教育资源汇总，包括语言学习、高等教育和职业培训等。',
+                            items: [
+                                '朱拉隆功大学 - 顶尖学府',
+                                '法政大学语言学院 - 语言培训',
+                                'Duke语言学校 - 专业泰语教学',
+                                '英国文化协会 - 英语学习',
+                                'Skillane - 在线技能培训'
+                            ]
+                        }
+                    }
+                },
+                buttons: {
+                    'Learn More': '了解更多',
+                    'Register Now': '立即注册',
+                    'Contact Us': '联系我们',
+                    'Book Now': '立即预订',
+                    'View Details': '查看详情',
+                    'Apply Now': '立即申请',
+                    'Get Started': '开始使用',
+                    'Download': '下载',
+                    'Subscribe': '订阅'
+                },
+                about: {
+                    welcome: '欢迎来到 ThaiKit - 您的泰国生活指南！',
+                    description: 'ThaiKit 是一个专门为在泰国生活的外国人、数字游民、企业家和学生设计的资源中心。无论您是在申请签证、开设银行账户、寻找公寓、创业，还是仅仅在寻找最佳的手机套餐 - 我们都能为您提供帮助。',
+                    services: {
+                        title: '我们的服务',
+                        features: {
+                            reliable: '提供来自可靠来源的信息',
+                            links: '官方网站和实用平台链接',
+                            tips: '专为外国人设计的本地提示',
+                            multilingual: '支持英语、中文、日语和泰语的多语言服务'
+                        },
+                        goal: '我们的目标是节省您的时间，避免困惑，帮助您在泰国蓬勃发展。'
+                    },
+                    contact: {
+                        title: '联系我们',
+                        email: '电子邮件',
+                        phone: '电话',
+                        address: '地址',
+                        social: '关注我们的社交媒体'
+                    }
+                },
+                footer: {
+                    version: '版本'
+                }
+            }
+        };
+
+        // 切换语言
+        function switchLanguage(langName) {
+            const currentLang = document.querySelector('.language-btn span').textContent;
+            if (currentLang === langName) return;
+
+            // 更新显示的语言
+            document.querySelector('.language-btn span').textContent = langName;
+            
+            // 获取语言代码
+            const langCode = getLangCode(langName);
+            
+            // 使用内置的翻译数据
+            const currentTranslations = translations[langCode];
+            if (currentTranslations) {
+                // 更新导航栏文本
+                document.querySelectorAll('.nav-link span').forEach((span, index) => {
+                    const keys = ['essentials', 'lifestyle', 'work-jobs', 'business', 'learning', 'about'];
+                    if (currentTranslations.navigation[keys[index]]) {
+                        span.textContent = currentTranslations.navigation[keys[index]];
+                    }
+                });
+
+                // 更新子菜单文本
+                document.querySelectorAll('.submenu-link').forEach(link => {
+                    const text = link.querySelector('i').nextSibling.textContent.trim();
+                    if (currentTranslations.navigation[text]) {
+                        link.querySelector('i').nextSibling.textContent = currentTranslations.navigation[text];
+                    }
+                });
+
+                // 更新页面标题
+                document.querySelectorAll('.page-title').forEach(title => {
+                    const text = title.textContent.trim();
+                    if (currentTranslations.navigation[text]) {
+                        title.textContent = currentTranslations.navigation[text];
+                    }
+                });
+
+                // 更新卡片标题
+                document.querySelectorAll('.category-card h2').forEach(title => {
+                    const iconElement = title.querySelector('i');
+                    if (iconElement) {
+                        const text = title.textContent.replace(iconElement.textContent, '').trim();
+                        if (currentTranslations.navigation[text]) {
+                            title.innerHTML = title.innerHTML.replace(text, currentTranslations.navigation[text]);
+                        }
+                    }
+                });
+
+                // 更新子类别标题
+                document.querySelectorAll('.link-list strong').forEach(strong => {
+                    const text = strong.textContent.trim();
+                    if (currentTranslations.navigation[text]) {
+                        strong.textContent = currentTranslations.navigation[text];
+                    }
+                });
+
+                // 更新按钮文本
+                document.querySelectorAll('.show-more-btn').forEach(btn => {
+                    const text = btn.textContent.trim();
+                    if (text.includes('Show More')) {
+                        btn.textContent = currentTranslations.navigation['showMore'];
+                    } else if (text.includes('Show Less')) {
+                        btn.textContent = currentTranslations.navigation['Show Less'];
+                    }
+                });
+
+                // 更新关于部分
+                const aboutSection = document.querySelector('#about');
+                if (aboutSection && currentTranslations.about) {
+                    // 更新欢迎文本
+                    const welcomeText = aboutSection.querySelector('.welcome-text');
+                    if (welcomeText) welcomeText.textContent = currentTranslations.about.welcome;
+
+                    // 更新描述文本
+                    const aboutText = aboutSection.querySelector('.about-content p:not(.welcome-text)');
+                    if (aboutText) aboutText.textContent = currentTranslations.about.description;
+
+                    // 更新服务部分
+                    const servicesList = aboutSection.querySelector('.feature-list');
+                    if (servicesList && currentTranslations.about.services) {
+                        const features = currentTranslations.about.services.features;
+                        const listItems = servicesList.querySelectorAll('li');
+                        listItems[0].textContent = features.reliable;
+                        listItems[1].textContent = features.links;
+                        listItems[2].textContent = features.tips;
+                        listItems[3].textContent = features.multilingual;
+                    }
+
+                    // 更新目标文本
+                    const goalText = aboutSection.querySelector('.goal-text');
+                    if (goalText && currentTranslations.about.services) {
+                        goalText.textContent = currentTranslations.about.services.goal;
+                    }
+
+                    // 更新联系部分
+                    const contactSection = document.querySelector('#contact-us');
+                    if (contactSection && currentTranslations.about.contact) {
+                        const title = contactSection.querySelector('h2');
+                        if (title) title.textContent = currentTranslations.about.contact.title;
+
+                        const socialTitle = contactSection.querySelector('.social-qr-codes h3');
+                        if (socialTitle) socialTitle.textContent = currentTranslations.about.contact.social;
+                    }
+                }
+
+                // 更新版本信息
+                const versionInfo = document.querySelector('.version-info p');
+                if (versionInfo && currentTranslations.footer) {
+                    versionInfo.textContent = `${currentTranslations.footer.version} 1.0.0`;
+                }
+
+                // 更新链接文本
+                document.querySelectorAll('a').forEach(link => {
+                    const text = link.textContent.trim();
+                    if (currentTranslations.content[text]) {
+                        link.textContent = currentTranslations.content[text];
+                    }
+                });
+
+                // 更新按钮文本
+                document.querySelectorAll('button:not(.language-btn)').forEach(button => {
+                    const text = button.textContent.trim();
+                    if (currentTranslations.buttons[text]) {
+                        button.textContent = currentTranslations.buttons[text];
+                    }
+                });
+            }
+
+            // 关闭菜单
+            document.querySelector('.language-menu').style.display = 'none';
+        }
     </script>
 </body>
 </html> 

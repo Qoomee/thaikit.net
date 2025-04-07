@@ -838,4 +838,56 @@ body {
         width: 80px;
         height: 80px;
     }
+}
+
+/* 语言切换器样式 */
+.language-switcher {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+    background: #e9ecef;
+}
+
+.language-btn i {
+    margin: 0 5px;
+}
+
+.language-menu {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    display: none;
+    z-index: 1000;
+}
+
+.language-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.language-menu a:hover {
+    background-color: #f8f9fa;
 } 

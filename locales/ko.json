@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "홈",
+    "about": "회사소개",
+    "services": "서비스",
+    "contact": "연락처"
+  },
+  "hero": {
+    "title": "웹사이트에 오신 것을 환영합니다",
+    "subtitle": "신뢰할 수 있는 비즈니스 파트너"
+  }
+} 

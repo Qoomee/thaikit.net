@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "首頁",
+    "about": "關於我們",
+    "services": "服務",
+    "contact": "聯絡我們"
+  },
+  "hero": {
+    "title": "歡迎訪問我們的網站",
+    "subtitle": "您值得信賴的商業夥伴"
+  }
+} 

@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to Our Website",
+    "subtitle": "Your trusted partner in business"
+  }
+} 
