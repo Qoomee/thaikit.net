@@ -82,7 +82,7 @@ export default function About() {
                         {/* 社交媒体二维码 */}
                         <div className="mt-8">
                             <h3 className="text-xl font-semibold text-gray-900 mb-4">Follow Us on Social Media</h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
                                 <div className="text-center">
                                     <Image
                                         src="https://i.imgur.com/LGryo9e.jpeg"
@@ -112,6 +112,16 @@ export default function About() {
                                         className="mx-auto mb-2"
                                     />
                                     <p className="text-gray-600">Line</p>
+                                </div>
+                                <div className="text-center">
+                                    <Image
+                                        src="https://i.imgur.com/iJUGEVV.jpeg"
+                                        alt="New QR Code"
+                                        width={150}
+                                        height={150}
+                                        className="mx-auto mb-2"
+                                    />
+                                    <p className="text-gray-600">New</p>
                                 </div>
                             </div>
                         </div>
