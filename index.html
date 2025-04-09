@@ -212,6 +212,16 @@
                     </div>
                 </a>
             </li>
+
+            <!-- Buy Me a Coffee -->
+            <li class="nav-item" style="margin-top: auto;">
+                <a href="https://buymeacoffee.com/qoomee" target="_blank" class="nav-link" style="background-color: #FFDD00; color: #000;">
+                    <div class="link-content">
+                        <i class="fas fa-coffee"></i>
+                        <span>Buy Me a Coffee</span>
+                    </div>
+                </a>
+            </li>
         </ul>
     </nav>
 
@@ -935,6 +945,11 @@
             // 导航栏点击事件
             document.querySelectorAll('.nav-link, .submenu-link').forEach(link => {
                 link.addEventListener('click', (e) => {
+                    // 如果是 Buy Me a Coffee 按钮，不阻止默认行为
+                    if (link.getAttribute('href') === 'https://buymeacoffee.com/qoomee') {
+                        return;
+                    }
+                    
                     e.preventDefault();
                     const targetId = link.getAttribute('href').substring(1);
                     const targetElement = document.getElementById(targetId);
